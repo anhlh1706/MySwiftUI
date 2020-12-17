@@ -15,6 +15,8 @@
 		E621C34B2589A5FE00878BA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E621C3352589A5FE00878BA8 /* Assets.xcassets */; };
 		E653AB53258A07EB003674C8 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E653AB52258A07EB003674C8 /* RoundedButton.swift */; };
 		E653AB54258A07EB003674C8 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E653AB52258A07EB003674C8 /* RoundedButton.swift */; };
+		E67C98862592E281005D1EBA /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67C98852592E281005D1EBA /* TabbarView.swift */; };
+		E67C98872592E281005D1EBA /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67C98852592E281005D1EBA /* TabbarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		E621C3442589A5FE00878BA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E621C3452589A5FE00878BA8 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		E653AB52258A07EB003674C8 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		E67C987125908EA6005D1EBA /* MySwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MySwiftUI.entitlements; sourceTree = "<group>"; };
+		E67C98852592E281005D1EBA /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +54,7 @@
 		E621C32D2589A5FA00878BA8 = {
 			isa = PBXGroup;
 			children = (
+				E67C987125908EA6005D1EBA /* MySwiftUI.entitlements */,
 				E621C3322589A5FA00878BA8 /* Shared */,
 				E621C33C2589A5FE00878BA8 /* iOS */,
 				E621C3432589A5FE00878BA8 /* macOS */,
@@ -64,6 +69,7 @@
 				E621C3342589A5FA00878BA8 /* ContentView.swift */,
 				E621C3352589A5FE00878BA8 /* Assets.xcassets */,
 				E653AB52258A07EB003674C8 /* RoundedButton.swift */,
+				E67C98852592E281005D1EBA /* TabbarView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -193,6 +199,7 @@
 			files = (
 				E621C3482589A5FE00878BA8 /* ContentView.swift in Sources */,
 				E653AB53258A07EB003674C8 /* RoundedButton.swift in Sources */,
+				E67C98862592E281005D1EBA /* TabbarView.swift in Sources */,
 				E621C3462589A5FE00878BA8 /* MySwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -203,6 +210,7 @@
 			files = (
 				E621C3492589A5FE00878BA8 /* ContentView.swift in Sources */,
 				E653AB54258A07EB003674C8 /* RoundedButton.swift in Sources */,
+				E67C98872592E281005D1EBA /* TabbarView.swift in Sources */,
 				E621C3472589A5FE00878BA8 /* MySwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,6 +334,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MySwiftUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G5XRG6XD8F;
 				ENABLE_PREVIEWS = YES;
@@ -338,6 +347,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.anhlh.MySwiftUI;
 				PRODUCT_NAME = MySwiftUI;
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -348,6 +358,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MySwiftUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G5XRG6XD8F;
 				ENABLE_PREVIEWS = YES;
@@ -360,6 +371,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.anhlh.MySwiftUI;
 				PRODUCT_NAME = MySwiftUI;
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
