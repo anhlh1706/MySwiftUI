@@ -9,24 +9,43 @@
 /* Begin PBXBuildFile section */
 		E621C3462589A5FE00878BA8 /* MySwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E621C3332589A5FA00878BA8 /* MySwiftUIApp.swift */; };
 		E621C3472589A5FE00878BA8 /* MySwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E621C3332589A5FA00878BA8 /* MySwiftUIApp.swift */; };
-		E621C3482589A5FE00878BA8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E621C3342589A5FA00878BA8 /* ContentView.swift */; };
-		E621C3492589A5FE00878BA8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E621C3342589A5FA00878BA8 /* ContentView.swift */; };
+		E621C3482589A5FE00878BA8 /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E621C3342589A5FA00878BA8 /* DiscoverView.swift */; };
+		E621C3492589A5FE00878BA8 /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E621C3342589A5FA00878BA8 /* DiscoverView.swift */; };
 		E621C34A2589A5FE00878BA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E621C3352589A5FE00878BA8 /* Assets.xcassets */; };
 		E621C34B2589A5FE00878BA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E621C3352589A5FE00878BA8 /* Assets.xcassets */; };
-		E653AB53258A07EB003674C8 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E653AB52258A07EB003674C8 /* RoundedButton.swift */; };
-		E653AB54258A07EB003674C8 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E653AB52258A07EB003674C8 /* RoundedButton.swift */; };
+		E67C98E325947C40005D1EBA /* tips.json in Resources */ = {isa = PBXBuildFile; fileRef = E67C98E125947C40005D1EBA /* tips.json */; };
+		E67C98E425947C40005D1EBA /* tips.json in Resources */ = {isa = PBXBuildFile; fileRef = E67C98E125947C40005D1EBA /* tips.json */; };
+		E67C98E525947C40005D1EBA /* locations.json in Resources */ = {isa = PBXBuildFile; fileRef = E67C98E225947C40005D1EBA /* locations.json */; };
+		E67C98E625947C40005D1EBA /* locations.json in Resources */ = {isa = PBXBuildFile; fileRef = E67C98E225947C40005D1EBA /* locations.json */; };
+		E67C99C1259AD6DE005D1EBA /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67C99C0259AD6DE005D1EBA /* Location.swift */; };
+		E67C99C2259AD6DE005D1EBA /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67C99C0259AD6DE005D1EBA /* Location.swift */; };
+		E67C99C8259AE58D005D1EBA /* WorldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67C99C7259AE58D005D1EBA /* WorldView.swift */; };
+		E67C99C9259AE58D005D1EBA /* WorldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67C99C7259AE58D005D1EBA /* WorldView.swift */; };
+		E67C99CF259B0FFC005D1EBA /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67C99CE259B0FFC005D1EBA /* Tip.swift */; };
+		E67C99D0259B0FFC005D1EBA /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67C99CE259B0FFC005D1EBA /* Tip.swift */; };
+		E67C99D4259B109A005D1EBA /* TipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67C99D3259B109A005D1EBA /* TipView.swift */; };
+		E67C99D5259B109A005D1EBA /* TipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67C99D3259B109A005D1EBA /* TipView.swift */; };
+		E67C99DB259B1BD0005D1EBA /* SharedLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67C99DA259B1BD0005D1EBA /* SharedLocation.swift */; };
+		E67C99DC259B1BD0005D1EBA /* SharedLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67C99DA259B1BD0005D1EBA /* SharedLocation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E621C3332589A5FA00878BA8 /* MySwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySwiftUIApp.swift; sourceTree = "<group>"; };
-		E621C3342589A5FA00878BA8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E621C3342589A5FA00878BA8 /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
 		E621C3352589A5FE00878BA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E621C33A2589A5FE00878BA8 /* MySwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E621C33D2589A5FE00878BA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E621C3422589A5FE00878BA8 /* MySwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E621C3442589A5FE00878BA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E621C3452589A5FE00878BA8 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
-		E653AB52258A07EB003674C8 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		E67C98E125947C40005D1EBA /* tips.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tips.json; sourceTree = "<group>"; };
+		E67C98E225947C40005D1EBA /* locations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = locations.json; sourceTree = "<group>"; };
+		E67C99C0259AD6DE005D1EBA /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		E67C99C7259AE58D005D1EBA /* WorldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldView.swift; sourceTree = "<group>"; };
+		E67C99CE259B0FFC005D1EBA /* Tip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
+		E67C99D3259B109A005D1EBA /* TipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipView.swift; sourceTree = "<group>"; };
+		E67C99DA259B1BD0005D1EBA /* SharedLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedLocation.swift; sourceTree = "<group>"; };
+		E67C99DF259B1BF4005D1EBA /* MySwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MySwiftUI.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +69,7 @@
 		E621C32D2589A5FA00878BA8 = {
 			isa = PBXGroup;
 			children = (
+				E67C99DF259B1BF4005D1EBA /* MySwiftUI.entitlements */,
 				E621C3322589A5FA00878BA8 /* Shared */,
 				E621C33C2589A5FE00878BA8 /* iOS */,
 				E621C3432589A5FE00878BA8 /* macOS */,
@@ -60,10 +80,10 @@
 		E621C3322589A5FA00878BA8 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				E67C99D9259B1BBB005D1EBA /* Model */,
+				E67C98D225947BD6005D1EBA /* Resources */,
+				E67C99D8259B1BB2005D1EBA /* Views */,
 				E621C3332589A5FA00878BA8 /* MySwiftUIApp.swift */,
-				E621C3342589A5FA00878BA8 /* ContentView.swift */,
-				E621C3352589A5FE00878BA8 /* Assets.xcassets */,
-				E653AB52258A07EB003674C8 /* RoundedButton.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -92,6 +112,36 @@
 				E621C3452589A5FE00878BA8 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		E67C98D225947BD6005D1EBA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E67C98E225947C40005D1EBA /* locations.json */,
+				E67C98E125947C40005D1EBA /* tips.json */,
+				E621C3352589A5FE00878BA8 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E67C99D8259B1BB2005D1EBA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E621C3342589A5FA00878BA8 /* DiscoverView.swift */,
+				E67C99C7259AE58D005D1EBA /* WorldView.swift */,
+				E67C99D3259B109A005D1EBA /* TipView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E67C99D9259B1BBB005D1EBA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E67C99C0259AD6DE005D1EBA /* Location.swift */,
+				E67C99CE259B0FFC005D1EBA /* Tip.swift */,
+				E67C99DA259B1BD0005D1EBA /* SharedLocation.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +223,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E621C34A2589A5FE00878BA8 /* Assets.xcassets in Resources */,
+				E67C98E525947C40005D1EBA /* locations.json in Resources */,
+				E67C98E325947C40005D1EBA /* tips.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +233,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E621C34B2589A5FE00878BA8 /* Assets.xcassets in Resources */,
+				E67C98E625947C40005D1EBA /* locations.json in Resources */,
+				E67C98E425947C40005D1EBA /* tips.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,8 +245,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E621C3482589A5FE00878BA8 /* ContentView.swift in Sources */,
-				E653AB53258A07EB003674C8 /* RoundedButton.swift in Sources */,
+				E621C3482589A5FE00878BA8 /* DiscoverView.swift in Sources */,
+				E67C99DB259B1BD0005D1EBA /* SharedLocation.swift in Sources */,
+				E67C99C8259AE58D005D1EBA /* WorldView.swift in Sources */,
+				E67C99D4259B109A005D1EBA /* TipView.swift in Sources */,
+				E67C99CF259B0FFC005D1EBA /* Tip.swift in Sources */,
+				E67C99C1259AD6DE005D1EBA /* Location.swift in Sources */,
 				E621C3462589A5FE00878BA8 /* MySwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -201,8 +259,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E621C3492589A5FE00878BA8 /* ContentView.swift in Sources */,
-				E653AB54258A07EB003674C8 /* RoundedButton.swift in Sources */,
+				E621C3492589A5FE00878BA8 /* DiscoverView.swift in Sources */,
+				E67C99DC259B1BD0005D1EBA /* SharedLocation.swift in Sources */,
+				E67C99C9259AE58D005D1EBA /* WorldView.swift in Sources */,
+				E67C99D5259B109A005D1EBA /* TipView.swift in Sources */,
+				E67C99D0259B0FFC005D1EBA /* Tip.swift in Sources */,
+				E67C99C2259AD6DE005D1EBA /* Location.swift in Sources */,
 				E621C3472589A5FE00878BA8 /* MySwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,6 +388,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MySwiftUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G5XRG6XD8F;
 				ENABLE_PREVIEWS = YES;
@@ -338,6 +401,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.anhlh.MySwiftUI;
 				PRODUCT_NAME = MySwiftUI;
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -348,6 +412,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MySwiftUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G5XRG6XD8F;
 				ENABLE_PREVIEWS = YES;
@@ -360,6 +425,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.anhlh.MySwiftUI;
 				PRODUCT_NAME = MySwiftUI;
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
