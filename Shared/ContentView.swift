@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @State var presentingModal = false
+    
     static var formatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateStyle = .full
@@ -18,6 +20,8 @@ struct ContentView: View {
     static var listString = "Everyone likes the weekend, it’s time to people do their work which they don’t have time to do in the weekdays. That’s cleaning house, shopping or simply spent time with family"
         .components(separatedBy: " ")
     
+    @State var numbers = [1, 2, 3]
+    
     @State var screenTitle = "System Design"
     
     @State var selectedIndex = 2
@@ -26,7 +30,7 @@ struct ContentView: View {
     
     @State var someString = "Some string"
     
-    @State var someNumber = 0.0
+    @State var someNumber = 1.0
     
     @State var selectedDate = Date()
     
@@ -58,11 +62,16 @@ struct ContentView: View {
                         .opacity(trueOrFalse ? 1 : 0.6)
                     
                     // MARK: - Stepper
-                    Stepper("It's \(Int(someNumber))", value: $someNumber, in: 0...20)
+                    Stepper("It's \(Int(someNumber))", value: $someNumber, in: 1...20)
                     
                     
                     // MARK: - Slider
-                    Slider(value: $someNumber, in: 0...20)
+                    Slider(value: $someNumber, in: 1...20)
+                    
+                    Color(.blue)
+                        .frame(width: 13*CGFloat(someNumber), height: 2)
+                        .cornerRadius(1)
+                        .animation(.default)
                 }
                 
                 Section {
@@ -78,15 +87,39 @@ struct ContentView: View {
                 }
                 
                 Section {
+                    // MARK: - NavigationLink
                     NavigationLink("Tabbar", destination: TabbarView())
                 }
                 
                 // MARK: - List
-                let people = (1...6).map { Person(name: "Person \($0)") }
+                let people = (1...3).map { Person(id: $0, name: "Person \($0)") }
                 
                 ForEach(people) {
                     Text($0.name)
                 }
+                
+                Section {
+                    List {
+                        ForEach(numbers, id: \.self) {
+                            Text("\($0)")
+                        }
+                        .onDelete(perform: removeNumber)
+                    }
+                    Button("Add number") {
+                        numbers.append((numbers.last ?? 0) + 1)
+                    }
+                }
+                
+                Section {
+                    NavigationLink("RoundedButton", destination: RoundedButton(title: "Action", action: {}))
+                    // MARK: - Present View
+                    Button("Present View") {
+                        presentingModal = true
+                    }.sheet(isPresented: $presentingModal) {
+                        SecondView()
+                    }
+                }
+                
             }
             .navigationTitle(screenTitle)
             .alert(isPresented: $showAlert) { () -> Alert in
@@ -100,6 +133,10 @@ struct ContentView: View {
         alertMsg = msg
         showAlert = true
     }
+    
+    func removeNumber(index: IndexSet) {
+        numbers.remove(atOffsets: index)
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {
@@ -109,8 +146,7 @@ struct ContentView_Previews: PreviewProvider {
 }
 
 struct Person: Identifiable {
-    var id = UUID()
+    var id: Int
     var name: String
 }
-
 

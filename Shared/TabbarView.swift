@@ -10,21 +10,27 @@ import SwiftUI
 struct TabbarView: View {
     var body: some View {
         TabView {
-            Text("First view")
-                .tabItem {
-                    Image(systemName: "list.dash")
-                    Text("Home")
-                }
+            GeometryReader { geo in
+                Image("banner")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: geo.size.width)
+            }
+            .tabItem {
+                Image(systemName: "list.dash")
+                Text("Home")
+            }
             
-            Text("Second view")
+            DrawView()
                 .tabItem {
                     Image(systemName: "sun.max")
                     Text("Sun")
                 }
-            Text("Third view")
+            
+            AnimationView()
                 .tabItem {
-                    Image(systemName: "sun")
-                    Text("Sun")
+                    Image(systemName: "cloud")
+                    Text("Cloud")
                 }
         }
         
