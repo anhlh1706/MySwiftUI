@@ -120,6 +120,9 @@ struct ContentView: View {
                     }
                 }
                 
+                Section {
+                    NavigationLink("Spirograph", destination: SpirographView())
+                }
             }
             .navigationTitle(screenTitle)
             .alert(isPresented: $showAlert) { () -> Alert in
