@@ -13,10 +13,20 @@
 		E621C3492589A5FE00878BA8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E621C3342589A5FA00878BA8 /* ContentView.swift */; };
 		E621C34A2589A5FE00878BA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E621C3352589A5FE00878BA8 /* Assets.xcassets */; };
 		E621C34B2589A5FE00878BA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E621C3352589A5FE00878BA8 /* Assets.xcassets */; };
+		E622793D25B17DE000AC5E7B /* PresentedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E622793C25B17DE000AC5E7B /* PresentedView.swift */; };
+		E622793E25B17DE000AC5E7B /* PresentedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E622793C25B17DE000AC5E7B /* PresentedView.swift */; };
 		E653AB53258A07EB003674C8 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E653AB52258A07EB003674C8 /* RoundedButton.swift */; };
 		E653AB54258A07EB003674C8 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E653AB52258A07EB003674C8 /* RoundedButton.swift */; };
 		E67C98862592E281005D1EBA /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67C98852592E281005D1EBA /* TabbarView.swift */; };
 		E67C98872592E281005D1EBA /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67C98852592E281005D1EBA /* TabbarView.swift */; };
+		E68B03A925DD23F600F387D7 /* SpirographView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68B03A825DD23F600F387D7 /* SpirographView.swift */; };
+		E68B03AA25DD23F600F387D7 /* SpirographView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68B03A825DD23F600F387D7 /* SpirographView.swift */; };
+		E6913B5A25C804FF00042134 /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6913B5925C804FF00042134 /* DrawView.swift */; };
+		E6913B5B25C804FF00042134 /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6913B5925C804FF00042134 /* DrawView.swift */; };
+		E6AE2AF825C79E0300CC1EF2 /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AE2AF725C79E0300CC1EF2 /* AnimationView.swift */; };
+		E6AE2AF925C79E0300CC1EF2 /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AE2AF725C79E0300CC1EF2 /* AnimationView.swift */; };
+		E6AE2AFE25C7A50600CC1EF2 /* PrimaryButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AE2AFD25C7A50600CC1EF2 /* PrimaryButtonModifier.swift */; };
+		E6AE2AFF25C7A50600CC1EF2 /* PrimaryButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AE2AFD25C7A50600CC1EF2 /* PrimaryButtonModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,9 +38,13 @@
 		E621C3422589A5FE00878BA8 /* MySwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E621C3442589A5FE00878BA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E621C3452589A5FE00878BA8 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		E622793C25B17DE000AC5E7B /* PresentedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentedView.swift; sourceTree = "<group>"; };
 		E653AB52258A07EB003674C8 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
-		E67C987125908EA6005D1EBA /* MySwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MySwiftUI.entitlements; sourceTree = "<group>"; };
 		E67C98852592E281005D1EBA /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
+		E68B03A825DD23F600F387D7 /* SpirographView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpirographView.swift; sourceTree = "<group>"; };
+		E6913B5925C804FF00042134 /* DrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
+		E6AE2AF725C79E0300CC1EF2 /* AnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationView.swift; sourceTree = "<group>"; };
+		E6AE2AFD25C7A50600CC1EF2 /* PrimaryButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +68,6 @@
 		E621C32D2589A5FA00878BA8 = {
 			isa = PBXGroup;
 			children = (
-				E67C987125908EA6005D1EBA /* MySwiftUI.entitlements */,
 				E621C3322589A5FA00878BA8 /* Shared */,
 				E621C33C2589A5FE00878BA8 /* iOS */,
 				E621C3432589A5FE00878BA8 /* macOS */,
@@ -65,11 +78,16 @@
 		E621C3322589A5FA00878BA8 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				E6AE2AFC25C7A4F600CC1EF2 /* ViewModifier */,
 				E621C3332589A5FA00878BA8 /* MySwiftUIApp.swift */,
 				E621C3342589A5FA00878BA8 /* ContentView.swift */,
-				E621C3352589A5FE00878BA8 /* Assets.xcassets */,
-				E653AB52258A07EB003674C8 /* RoundedButton.swift */,
 				E67C98852592E281005D1EBA /* TabbarView.swift */,
+				E653AB52258A07EB003674C8 /* RoundedButton.swift */,
+				E622793C25B17DE000AC5E7B /* PresentedView.swift */,
+				E68B03A825DD23F600F387D7 /* SpirographView.swift */,
+				E6913B5925C804FF00042134 /* DrawView.swift */,
+				E6AE2AF725C79E0300CC1EF2 /* AnimationView.swift */,
+				E621C3352589A5FE00878BA8 /* Assets.xcassets */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -98,6 +116,14 @@
 				E621C3452589A5FE00878BA8 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		E6AE2AFC25C7A4F600CC1EF2 /* ViewModifier */ = {
+			isa = PBXGroup;
+			children = (
+				E6AE2AFD25C7A50600CC1EF2 /* PrimaryButtonModifier.swift */,
+			);
+			path = ViewModifier;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,7 +170,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1220;
-				LastUpgradeCheck = 1220;
+				LastUpgradeCheck = 1230;
 				TargetAttributes = {
 					E621C3392589A5FE00878BA8 = {
 						CreatedOnToolsVersion = 12.2;
@@ -198,8 +224,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E621C3482589A5FE00878BA8 /* ContentView.swift in Sources */,
+				E622793D25B17DE000AC5E7B /* PresentedView.swift in Sources */,
+				E68B03A925DD23F600F387D7 /* SpirographView.swift in Sources */,
+				E6913B5A25C804FF00042134 /* DrawView.swift in Sources */,
 				E653AB53258A07EB003674C8 /* RoundedButton.swift in Sources */,
+				E6AE2AF825C79E0300CC1EF2 /* AnimationView.swift in Sources */,
 				E67C98862592E281005D1EBA /* TabbarView.swift in Sources */,
+				E6AE2AFE25C7A50600CC1EF2 /* PrimaryButtonModifier.swift in Sources */,
 				E621C3462589A5FE00878BA8 /* MySwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,8 +240,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E621C3492589A5FE00878BA8 /* ContentView.swift in Sources */,
+				E622793E25B17DE000AC5E7B /* PresentedView.swift in Sources */,
+				E68B03AA25DD23F600F387D7 /* SpirographView.swift in Sources */,
+				E6913B5B25C804FF00042134 /* DrawView.swift in Sources */,
 				E653AB54258A07EB003674C8 /* RoundedButton.swift in Sources */,
+				E6AE2AF925C79E0300CC1EF2 /* AnimationView.swift in Sources */,
 				E67C98872592E281005D1EBA /* TabbarView.swift in Sources */,
+				E6AE2AFF25C7A50600CC1EF2 /* PrimaryButtonModifier.swift in Sources */,
 				E621C3472589A5FE00878BA8 /* MySwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -384,6 +420,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = G5XRG6XD8F;
@@ -408,6 +445,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = G5XRG6XD8F;

@@ -1,5 +1,5 @@
 //
-//  SecondView.swift
+//  PresentedView.swift
 //  MySwiftUI
 //
 //  Created by Lê Hoàng Anh on 15/01/2021.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SecondView: View {
+struct PresentedView: View {
     
     @Environment(\.presentationMode) var presentationMode
     

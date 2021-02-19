@@ -6,8 +6,11 @@
 //
 
 import SwiftUI
+import LocalAuthentication
 
 struct ContentView: View {
+    
+    @Environment(\.horizontalSizeClass) var sizeClass
     
     @State var presentingModal = false
     
@@ -48,6 +51,8 @@ struct ContentView: View {
                 Section {
                     // MARK: - Text
                     Text("\(Date(), formatter: Self.formatter)")
+                    
+                    Text("Screen class: \(sizeClass == .regular ? "Regular" : "Compact")")
                 }
                 
                 Section {
@@ -113,10 +118,20 @@ struct ContentView: View {
                 Section {
                     NavigationLink("RoundedButton", destination: RoundedButton(title: "Action", action: {}))
                     // MARK: - Present View
-                    Button("Present View") {
-                        presentingModal = true
+                    Button("Private things") {
+                        let context = LAContext()
+                        var error: NSError?
+                        
+                        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
+                            let reason = "Need to unlock your data!"
+                            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { (success, error) in
+                                if success {
+                                    presentingModal = true
+                                }
+                            }
+                        }
                     }.sheet(isPresented: $presentingModal) {
-                        SecondView()
+                        PresentedView()
                     }
                 }
                 
