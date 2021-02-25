@@ -7,7 +7,23 @@
 
 import SwiftUI
 
+class Percent: ObservableObject {
+    
+    var value: Int {
+        didSet {
+            objectWillChange.send()
+        }
+    }
+    
+    init() {
+        value = 1
+    }
+}
+
 struct TabbarView: View {
+    
+    @EnvironmentObject var percent: Percent
+    
     var body: some View {
         TabView {
             GeometryReader { geo in
@@ -30,9 +46,9 @@ struct TabbarView: View {
             AnimationView()
                 .tabItem {
                     Image(systemName: "cloud")
-                    Text("Cloud")
+                    Text("Cloud \(percent.value)")
                 }
         }
-        
+        .environmentObject(percent)
     }
 }

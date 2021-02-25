@@ -10,6 +10,8 @@ import LocalAuthentication
 
 struct ContentView: View {
     
+    @ObservedObject var percent: Percent = Percent()
+    
     @Environment(\.horizontalSizeClass) var sizeClass
     
     @State var presentingModal = false
@@ -67,14 +69,14 @@ struct ContentView: View {
                         .opacity(trueOrFalse ? 1 : 0.6)
                     
                     // MARK: - Stepper
-                    Stepper("It's \(Int(someNumber))", value: $someNumber, in: 1...20)
+                    Stepper("It's \(Int(percent.value)) percent", value: $percent.value, in: 1...100)
                     
-                    
-                    // MARK: - Slider
-                    Slider(value: $someNumber, in: 1...20)
+                    Slider(value: $someNumber, in: 0...100) { _ in
+                        percent.value = Int(someNumber)
+                    }
                     
                     Color(.blue)
-                        .frame(width: 13*CGFloat(someNumber), height: 2)
+                        .frame(width: (UIScreen.main.bounds.width - 80) / 100 * CGFloat(percent.value), height: 2)
                         .cornerRadius(1)
                         .animation(.default)
                 }
@@ -158,6 +160,7 @@ struct ContentView: View {
                 Alert(title: Text(alertTitle), message: Text(alertMsg), dismissButton: .default(Text("OK")))
             }
         }
+        .environmentObject(percent)
     }
     
     func showAlert(title: String, msg: String = "") {

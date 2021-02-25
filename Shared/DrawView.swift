@@ -9,6 +9,8 @@ import SwiftUI
 
 struct DrawView: View {
     
+    @EnvironmentObject var percent: Percent
+    
     @State private var petalOffset: Double = -20
     
     @State private var petalWidth: Double = 40
@@ -28,7 +30,7 @@ struct DrawView: View {
                 
                 Color(.clear).frame(height: 70)
                 
-                Arc(percent: 60, clockwise: false)
+                Arc(percent: Double(percent.value), clockwise: false)
                     .stroke(Color.blue, style: StrokeStyle(lineWidth: 18, lineCap: .round, lineJoin: .round))
                     .frame(width: 220, height: 220)
                 
