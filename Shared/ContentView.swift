@@ -137,6 +137,8 @@ struct ContentView: View {
                 
                 Section {
                     NavigationLink("Spirograph", destination: SpirographView())
+                    
+                    NavigationLink("Neumorphism", destination: NeumorphismExampleView())
                 }
             }
             .navigationTitle(screenTitle)
