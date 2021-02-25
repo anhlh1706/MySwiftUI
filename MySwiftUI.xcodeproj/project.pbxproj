@@ -90,8 +90,8 @@
 				E68B03A825DD23F600F387D7 /* SpirographView.swift */,
 				E6913B5925C804FF00042134 /* DrawView.swift */,
 				E6AE2AF725C79E0300CC1EF2 /* AnimationView.swift */,
-				E621C3352589A5FE00878BA8 /* Assets.xcassets */,
 				E63F7BEA25DFB50A004E78A0 /* Neumorphism.swift */,
+				E621C3352589A5FE00878BA8 /* Assets.xcassets */,
 			);
 			path = Shared;
 			sourceTree = "<group>";

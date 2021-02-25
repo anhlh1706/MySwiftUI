@@ -105,8 +105,17 @@ struct ContentView: View {
                 
                 Section {
                     List {
-                        ForEach(numbers, id: \.self) {
-                            Text("\($0)")
+                        ForEach(numbers, id: \.self) { num in
+                            Text("\(num)")
+                                .contextMenu {
+                                    Button("Delete") {
+                                        if let index = numbers.firstIndex(of: num) {
+                                            withAnimation {
+                                                removeNumber(index: IndexSet(integer: index))
+                                            }
+                                        }
+                                    }
+                                }
                         }
                         .onDelete(perform: removeNumber)
                     }
@@ -136,8 +145,11 @@ struct ContentView: View {
                 }
                 
                 Section {
+                    // MARK: - Spirograph
                     NavigationLink("Spirograph", destination: SpirographView())
                     
+                    
+                    // MARK: - Neumorphism
                     NavigationLink("Neumorphism", destination: NeumorphismExampleView())
                 }
             }
