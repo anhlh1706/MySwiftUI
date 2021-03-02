@@ -17,3 +17,10 @@ struct PrimaryButtonModifier: ViewModifier {
             .clipShape(Circle())
     }
 }
+
+struct ShortTextModifier: ViewModifier {
+    
+    func body(content: Content) -> some View {
+        content.frame(height: 12)
+    }
+}

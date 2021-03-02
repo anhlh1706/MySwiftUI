@@ -12,8 +12,9 @@ struct ContentView: View {
     
     @ObservedObject var percent: Percent = Percent()
     
+    #if os(iOS)
     @Environment(\.horizontalSizeClass) var sizeClass
-    
+    #endif
     @State var presentingModal = false
     
     static var formatter: DateFormatter = {
@@ -53,8 +54,9 @@ struct ContentView: View {
                 Section {
                     // MARK: - Text
                     Text("\(Date(), formatter: Self.formatter)")
-                    
+                    #if os(iOS)
                     Text("Screen class: \(sizeClass == .regular ? "Regular" : "Compact")")
+                    #endif
                 }
                 
                 Section {
@@ -75,10 +77,12 @@ struct ContentView: View {
                         percent.value = Int(someNumber)
                     }
                     
+                    #if os(iOS)
                     Color(.blue)
                         .frame(width: (UIScreen.main.bounds.width - 80) / 100 * CGFloat(percent.value), height: 2)
                         .cornerRadius(1)
                         .animation(.default)
+                    #endif
                 }
                 
                 Section {
@@ -99,12 +103,6 @@ struct ContentView: View {
                 }
                 
                 // MARK: - List
-                let people = (1...3).map { Person(id: $0, name: "Person \($0)") }
-                
-                ForEach(people) {
-                    Text($0.name)
-                }
-                
                 Section {
                     List {
                         ForEach(numbers, id: \.self) { num in

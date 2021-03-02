@@ -28,13 +28,13 @@ struct DrawView: View {
                     .stroke(Color.red, style: StrokeStyle(lineWidth: 18, lineCap: .round, lineJoin: .round))
                     .frame(width: 220, height: 220)
                 
-                Color(.clear).frame(height: 70)
+                Color(CGColor.clear).frame(height: 70)
                 
                 Arc(percent: Double(percent.value), clockwise: false)
                     .stroke(Color.blue, style: StrokeStyle(lineWidth: 18, lineCap: .round, lineJoin: .round))
                     .frame(width: 220, height: 220)
                 
-                Color(.clear).frame(height: 70)
+                Color(CGColor.clear).frame(height: 70)
                 
                 Path { path in
                     path.move(to: CGPoint(x: 110, y: 0))
@@ -45,7 +45,7 @@ struct DrawView: View {
                 .fill(Color.blue)
                 .frame(width: 220, height: 220)
                 
-                Color(.clear).frame(height: 70)
+                Color(CGColor.clear).frame(height: 70)
             }
             
             VStack {
@@ -60,7 +60,7 @@ struct DrawView: View {
                         .frame(width: 140, height: 140)
                 }
                 
-                Color(.clear).frame(height: 20)
+                Color(CGColor.clear).frame(height: 20)
                 
                 Text("Offset")
                 Slider(value: $petalOffset, in: -20...20)

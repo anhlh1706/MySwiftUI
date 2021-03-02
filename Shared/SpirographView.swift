@@ -27,25 +27,32 @@ struct SpirographView: View {
         
         Group {
             Text("Inner radius: \(Int(innerRadius))")
+                .modifier(ShortTextModifier())
             Slider(value: $innerRadius, in: 10...150, step: 1)
                 .padding([.horizontal, .bottom])
             
             Text("Outer radius: \(Int(outerRadius))")
+                .modifier(ShortTextModifier())
             Slider(value: $outerRadius, in: 1...150, step: 1)
                 .padding([.horizontal, .bottom])
             
             Text("Distance: \(Int(distance))")
+                .modifier(ShortTextModifier())
             Slider(value: $distance, in: 1...150, step: 1)
                 .padding([.horizontal, .bottom])
             
             Text("Amount: \(amount, specifier: "%.2f")")
+                .modifier(ShortTextModifier())
             Slider(value: $amount)
                 .padding([.horizontal, .bottom])
             
             Text("Color")
+                .modifier(ShortTextModifier())
             Slider(value: $hue)
                 .padding([.horizontal, .bottom])
         }
+        
+        Spacer()
     }
 }
 
