@@ -7,22 +7,9 @@
 
 import SwiftUI
 
-class Percent: ObservableObject {
-    
-    var value: Int {
-        didSet {
-            objectWillChange.send()
-        }
-    }
-    
-    init() {
-        value = 1
-    }
-}
-
 struct TabbarView: View {
     
-    @EnvironmentObject var percent: Percent
+    @EnvironmentObject var percent: Global
     
     var body: some View {
         TabView {
@@ -46,9 +33,10 @@ struct TabbarView: View {
             AnimationView()
                 .tabItem {
                     Image(systemName: "cloud")
-                    Text("Cloud \(percent.value)")
+                    Text("Cloud")
                 }
         }
+        .accentColor(percent.primaryColor)
         .environmentObject(percent)
     }
 }

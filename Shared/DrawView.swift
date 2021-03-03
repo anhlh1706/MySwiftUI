@@ -9,7 +9,7 @@ import SwiftUI
 
 struct DrawView: View {
     
-    @EnvironmentObject var percent: Percent
+    @EnvironmentObject var global: Global
     
     @State private var petalOffset: Double = -20
     
@@ -28,13 +28,13 @@ struct DrawView: View {
                     .stroke(Color.red, style: StrokeStyle(lineWidth: 18, lineCap: .round, lineJoin: .round))
                     .frame(width: 220, height: 220)
                 
-                Color(CGColor.clear).frame(height: 70)
+                Color(UIColor.clear).frame(height: 70)
                 
-                Arc(percent: Double(percent.value), clockwise: false)
+                Arc(percent: Double(global.percent), clockwise: false)
                     .stroke(Color.blue, style: StrokeStyle(lineWidth: 18, lineCap: .round, lineJoin: .round))
                     .frame(width: 220, height: 220)
                 
-                Color(CGColor.clear).frame(height: 70)
+                Color(.clear).frame(height: 70)
                 
                 Path { path in
                     path.move(to: CGPoint(x: 110, y: 0))
@@ -45,7 +45,7 @@ struct DrawView: View {
                 .fill(Color.blue)
                 .frame(width: 220, height: 220)
                 
-                Color(CGColor.clear).frame(height: 70)
+                Color(UIColor.clear).frame(height: 70)
             }
             
             VStack {
@@ -60,7 +60,7 @@ struct DrawView: View {
                         .frame(width: 140, height: 140)
                 }
                 
-                Color(CGColor.clear).frame(height: 20)
+                Color(UIColor.clear).frame(height: 20)
                 
                 Text("Offset")
                 Slider(value: $petalOffset, in: -20...20)
@@ -206,19 +206,20 @@ struct ColorView: View {
         ZStack {
             Circle()
                 .fill(Color(red: 1, green: 0, blue: 0))
-                .frame(width: 200 * amount)
-                .offset(x: -46, y: -80)
+                .frame(width: 170 * amount)
+                .offset(x: -46, y: -40)
                 .blendMode(.screen)
             
             Circle()
                 .fill(Color(red: 0, green: 1, blue: 0))
-                .frame(width: 200 * amount)
-                .offset(x: 46, y: -80)
+                .frame(width: 170 * amount)
+                .offset(x: 46, y: -40)
                 .blendMode(.screen)
             
             Circle()
                 .fill(Color(red: 0, green: 0, blue: 1))
-                .frame(width: 200 * amount)
+                .frame(width: 170 * amount)
+                .offset(y: 40)
                 .blendMode(.screen)
         }
         .frame(width: 250, height: 250)

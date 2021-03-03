@@ -19,7 +19,7 @@ struct PresentedView: View {
                 .background(Color.orange)
                 .border(ImagePaint(image: Image("banner"), scale: 0.02), width: 30)
             
-            Color(CGColor.clear)
+            Color(UIColor.clear)
                 .frame(height: 30)
             
             Button("Dismiss") {

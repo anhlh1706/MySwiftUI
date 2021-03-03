@@ -29,6 +29,10 @@
 		E6AE2AF925C79E0300CC1EF2 /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AE2AF725C79E0300CC1EF2 /* AnimationView.swift */; };
 		E6AE2AFE25C7A50600CC1EF2 /* PrimaryButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AE2AFD25C7A50600CC1EF2 /* PrimaryButtonModifier.swift */; };
 		E6AE2AFF25C7A50600CC1EF2 /* PrimaryButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AE2AFD25C7A50600CC1EF2 /* PrimaryButtonModifier.swift */; };
+		E6E845B425EF6DA100CA0FD8 /* MapKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E845B325EF6DA100CA0FD8 /* MapKitView.swift */; };
+		E6E845B525EF6DA100CA0FD8 /* MapKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E845B325EF6DA100CA0FD8 /* MapKitView.swift */; };
+		E6E845BD25EF7C1700CA0FD8 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E845BC25EF7C1700CA0FD8 /* Global.swift */; };
+		E6E845BE25EF7C1700CA0FD8 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E845BC25EF7C1700CA0FD8 /* Global.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +52,8 @@
 		E6913B5925C804FF00042134 /* DrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
 		E6AE2AF725C79E0300CC1EF2 /* AnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationView.swift; sourceTree = "<group>"; };
 		E6AE2AFD25C7A50600CC1EF2 /* PrimaryButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonModifier.swift; sourceTree = "<group>"; };
+		E6E845B325EF6DA100CA0FD8 /* MapKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitView.swift; sourceTree = "<group>"; };
+		E6E845BC25EF7C1700CA0FD8 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +87,7 @@
 		E621C3322589A5FA00878BA8 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				E6AE2AFC25C7A4F600CC1EF2 /* ViewModifier */,
+				E6E845C125EF7C4700CA0FD8 /* Common */,
 				E621C3332589A5FA00878BA8 /* MySwiftUIApp.swift */,
 				E621C3342589A5FA00878BA8 /* ContentView.swift */,
 				E67C98852592E281005D1EBA /* TabbarView.swift */,
@@ -91,6 +97,7 @@
 				E6913B5925C804FF00042134 /* DrawView.swift */,
 				E6AE2AF725C79E0300CC1EF2 /* AnimationView.swift */,
 				E63F7BEA25DFB50A004E78A0 /* Neumorphism.swift */,
+				E6E845B325EF6DA100CA0FD8 /* MapKitView.swift */,
 				E621C3352589A5FE00878BA8 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -128,6 +135,23 @@
 				E6AE2AFD25C7A50600CC1EF2 /* PrimaryButtonModifier.swift */,
 			);
 			path = ViewModifier;
+			sourceTree = "<group>";
+		};
+		E6E845C125EF7C4700CA0FD8 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E6E845C225EF7C5200CA0FD8 /* Models */,
+				E6AE2AFC25C7A4F600CC1EF2 /* ViewModifier */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E6E845C225EF7C5200CA0FD8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E6E845BC25EF7C1700CA0FD8 /* Global.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +256,10 @@
 				E68B03A925DD23F600F387D7 /* SpirographView.swift in Sources */,
 				E6913B5A25C804FF00042134 /* DrawView.swift in Sources */,
 				E653AB53258A07EB003674C8 /* RoundedButton.swift in Sources */,
+				E6E845B425EF6DA100CA0FD8 /* MapKitView.swift in Sources */,
 				E6AE2AF825C79E0300CC1EF2 /* AnimationView.swift in Sources */,
 				E67C98862592E281005D1EBA /* TabbarView.swift in Sources */,
+				E6E845BD25EF7C1700CA0FD8 /* Global.swift in Sources */,
 				E6AE2AFE25C7A50600CC1EF2 /* PrimaryButtonModifier.swift in Sources */,
 				E621C3462589A5FE00878BA8 /* MySwiftUIApp.swift in Sources */,
 				E63F7BEB25DFB50A004E78A0 /* Neumorphism.swift in Sources */,
@@ -249,8 +275,10 @@
 				E68B03AA25DD23F600F387D7 /* SpirographView.swift in Sources */,
 				E6913B5B25C804FF00042134 /* DrawView.swift in Sources */,
 				E653AB54258A07EB003674C8 /* RoundedButton.swift in Sources */,
+				E6E845B525EF6DA100CA0FD8 /* MapKitView.swift in Sources */,
 				E6AE2AF925C79E0300CC1EF2 /* AnimationView.swift in Sources */,
 				E67C98872592E281005D1EBA /* TabbarView.swift in Sources */,
+				E6E845BE25EF7C1700CA0FD8 /* Global.swift in Sources */,
 				E6AE2AFF25C7A50600CC1EF2 /* PrimaryButtonModifier.swift in Sources */,
 				E621C3472589A5FE00878BA8 /* MySwiftUIApp.swift in Sources */,
 				E63F7BEC25DFB50A004E78A0 /* Neumorphism.swift in Sources */,
@@ -390,8 +418,9 @@
 				PRODUCT_NAME = MySwiftUI;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Debug;
 		};
@@ -414,8 +443,9 @@
 				PRODUCT_NAME = MySwiftUI;
 				SDKROOT = iphoneos;
 				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

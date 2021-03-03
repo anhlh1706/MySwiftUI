@@ -10,13 +10,6 @@ import LocalAuthentication
 
 struct ContentView: View {
     
-    @ObservedObject var percent: Percent = Percent()
-    
-    #if os(iOS)
-    @Environment(\.horizontalSizeClass) var sizeClass
-    #endif
-    @State var presentingModal = false
-    
     static var formatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateStyle = .full
@@ -26,27 +19,35 @@ struct ContentView: View {
     static var listString = "Everyone likes the weekend, it’s time to people do their work which they don’t have time to do in the weekdays. That’s cleaning house, shopping or simply spent time with family"
         .components(separatedBy: " ")
     
-    @State var numbers = [1, 2, 3]
+    #if os(iOS)
+    @Environment(\.horizontalSizeClass) var sizeClass
+    #endif
     
-    @State var screenTitle = "System Design"
+    @EnvironmentObject var global: Global
     
-    @State var selectedIndex = 2
+    @State private var presentingModal = false
     
-    @State var trueOrFalse = false
+    @State private var numbers = [1, 2, 3]
     
-    @State var someString = "Some string"
+    @State private var screenTitle = "System Design"
     
-    @State var someNumber = 1.0
+    @State private var selectedIndex = 2
     
-    @State var selectedDate = Date()
+    @State private var trueOrFalse = false
     
-    @State var showAlert = false
+    @State private var someString = "Some string"
     
-    @State var alertTitle = ""
+    @State private var someNumber = 1.0
     
-    @State var alertMsg = ""
+    @State private var selectedDate = Date()
     
-    @State var selectedItem = ""
+    @State private var showAlert = false
+    
+    @State private var alertTitle = ""
+    
+    @State private var alertMsg = ""
+    
+    @State private var selectedItem = ""
     
     var body: some View {
         NavigationView {
@@ -71,18 +72,21 @@ struct ContentView: View {
                         .opacity(trueOrFalse ? 1 : 0.6)
                     
                     // MARK: - Stepper
-                    Stepper("It's \(Int(percent.value)) percent", value: $percent.value, in: 1...100)
+                    Stepper("It's \(Int(global.percent)) percent", value: $global.percent, in: 1...100)
                     
                     Slider(value: $someNumber, in: 0...100) { _ in
-                        percent.value = Int(someNumber)
+                        global.percent = Int(someNumber)
                     }
                     
                     #if os(iOS)
-                    Color(.blue)
-                        .frame(width: (UIScreen.main.bounds.width - 80) / 100 * CGFloat(percent.value), height: 2)
+                    global.primaryColor
+                        .frame(width: (UIScreen.main.bounds.width - 80) / 100 * CGFloat(global.percent), height: 2)
                         .cornerRadius(1)
                         .animation(.default)
                     #endif
+                    
+                    // MARK: - Color picker
+                    ColorPicker("Primary color", selection: $global.primaryColor)
                 }
                 
                 Section {
@@ -122,6 +126,7 @@ struct ContentView: View {
                     Button("Add number") {
                         numbers.append((numbers.last ?? 0) + 1)
                     }
+                    .foregroundColor(global.primaryColor)
                 }
                 
                 Section {
@@ -142,6 +147,7 @@ struct ContentView: View {
                     }.sheet(isPresented: $presentingModal) {
                         PresentedView()
                     }
+                    .foregroundColor(global.primaryColor)
                 }
                 
                 Section {
@@ -151,6 +157,10 @@ struct ContentView: View {
                     
                     // MARK: - Neumorphism
                     NavigationLink("Neumorphism", destination: NeumorphismExampleView())
+                    
+                    
+                    // MARK: - MapKit
+                    NavigationLink("MapKit", destination: MapKitView())
                 }
             }
             .navigationTitle(screenTitle)
@@ -158,7 +168,8 @@ struct ContentView: View {
                 Alert(title: Text(alertTitle), message: Text(alertMsg), dismissButton: .default(Text("OK")))
             }
         }
-        .environmentObject(percent)
+        .accentColor(global.primaryColor)
+        .environmentObject(global)
     }
     
     func showAlert(title: String, msg: String = "") {
