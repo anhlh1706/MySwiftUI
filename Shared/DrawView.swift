@@ -25,13 +25,13 @@ struct DrawView: View {
         ScrollView {
             VStack {
                 Triangle()
-                    .stroke(Color.red, style: StrokeStyle(lineWidth: 18, lineCap: .round, lineJoin: .round))
+                    .stroke(global.primaryColor, style: StrokeStyle(lineWidth: 18, lineCap: .round, lineJoin: .round))
                     .frame(width: 220, height: 220)
                 
                 Color(UIColor.clear).frame(height: 70)
                 
                 Arc(percent: Double(global.percent), clockwise: false)
-                    .stroke(Color.blue, style: StrokeStyle(lineWidth: 18, lineCap: .round, lineJoin: .round))
+                    .stroke(global.primaryColor, style: StrokeStyle(lineWidth: 18, lineCap: .round, lineJoin: .round))
                     .frame(width: 220, height: 220)
                 
                 Color(.clear).frame(height: 70)
@@ -42,7 +42,7 @@ struct DrawView: View {
                     path.addLine(to: CGPoint(x: 0, y: 220))
                     path.addLine(to: CGPoint(x: 110, y: 0))
                 }
-                .fill(Color.blue)
+                .fill(global.primaryColor)
                 .frame(width: 220, height: 220)
                 
                 Color(UIColor.clear).frame(height: 70)
@@ -52,11 +52,11 @@ struct DrawView: View {
                 
                 HStack(spacing: 55) {
                     Flower(petalOffset: petalOffset, petalWidth: petalWidth)
-                        .stroke(Color.red, lineWidth: 1)
+                        .stroke(global.primaryColor, lineWidth: 1)
                         .frame(width: 140, height: 140)
                     
                     Flower(petalOffset: petalOffset, petalWidth: petalWidth)
-                        .fill(Color.red, style: FillStyle(eoFill: true))
+                        .fill(global.primaryColor, style: FillStyle(eoFill: true))
                         .frame(width: 140, height: 140)
                 }
                 
@@ -87,6 +87,7 @@ struct DrawView: View {
                     .padding(.top)
                 
                 Trapezoid(insertAmount: insertAmount)
+                    .fill(global.primaryColor)
                     .gesture(
                         DragGesture()
                             .onChanged {

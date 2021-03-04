@@ -8,15 +8,17 @@
 import SwiftUI
 import LocalAuthentication
 
+var formatter: DateFormatter = {
+    let formatter = DateFormatter()
+    formatter.dateStyle = .full
+    return formatter
+}()
+
+// @State - private locally
+// @StateObject - reference private locally
 struct ContentView: View {
     
-    static var formatter: DateFormatter = {
-        let formatter = DateFormatter()
-        formatter.dateStyle = .full
-        return formatter
-    }()
-    
-    static var listString = "Everyone likes the weekend, it’s time to people do their work which they don’t have time to do in the weekdays. That’s cleaning house, shopping or simply spent time with family"
+    let listString = "Everyone likes the weekend, it’s time to people do their work which they don’t have time to do in the weekdays."
         .components(separatedBy: " ")
     
     #if os(iOS)
@@ -31,15 +33,11 @@ struct ContentView: View {
     
     @State private var screenTitle = "System Design"
     
-    @State private var selectedIndex = 2
-    
     @State private var trueOrFalse = false
     
     @State private var someString = "Some string"
     
     @State private var someNumber = 1.0
-    
-    @State private var selectedDate = Date()
     
     @State private var showAlert = false
     
@@ -47,17 +45,25 @@ struct ContentView: View {
     
     @State private var alertMsg = ""
     
-    @State private var selectedItem = ""
+    @State private var selectedDate = Date()
+    
+    // UserDefaults
+    @AppStorage("selectedIndex") var selectedIndex = 2
+    
+    // Changes following device text scale factor automatically
+    @ScaledMetric var textScale = 1
     
     var body: some View {
         NavigationView {
             Form {
                 Section {
-                    // MARK: - Text
-                    Text("\(Date(), formatter: Self.formatter)")
+                    Text("\(Date(), formatter: formatter)")
+                    
                     #if os(iOS)
                     Text("Screen class: \(sizeClass == .regular ? "Regular" : "Compact")")
                     #endif
+                    
+                    Text("Device text scale: \(textScale, specifier: "%.2f")")
                 }
                 
                 Section {
@@ -71,39 +77,69 @@ struct ContentView: View {
                         .disabled(!trueOrFalse)
                         .opacity(trueOrFalse ? 1 : 0.6)
                     
-                    // MARK: - Stepper
-                    Stepper("It's \(Int(global.percent)) percent", value: $global.percent, in: 1...100)
-                    
-                    Slider(value: $someNumber, in: 0...100) { _ in
-                        global.percent = Int(someNumber)
-                    }
-                    
-                    #if os(iOS)
-                    global.primaryColor
-                        .frame(width: (UIScreen.main.bounds.width - 80) / 100 * CGFloat(global.percent), height: 2)
-                        .cornerRadius(1)
-                        .animation(.default)
-                    #endif
-                    
                     // MARK: - Color picker
                     ColorPicker("Primary color", selection: $global.primaryColor)
-                }
-                
-                Section {
-                    // MARK: - Date Picker
-                    DatePicker(Self.formatter.string(from: selectedDate), selection: $selectedDate, displayedComponents: .date)
                     
-                    // MARK: - Picker
-                    Picker("Select something", selection: $selectedIndex) {
-                        ForEach(0..<Self.listString.count) {
-                            Text(Self.listString[$0])
+                    
+                    // MARK: - Slider
+                    Slider(value: $someNumber, in: 0...100) { _ in
+                        withAnimation {
+                            global.percent = Int(someNumber)
                         }
                     }
+                    
+                    // MARK: - ProgressView
+                    ProgressView(value: Double(global.percent), total: 100)
                 }
                 
                 Section {
-                    // MARK: - NavigationLink
+                    // MARK: - Spirograph
+                    NavigationLink("Spirograph", destination: SpirographView())
+                    
+                    
+                    // MARK: - Neumorphism
+                    NavigationLink("Neumorphism", destination: NeumorphismExampleView())
+                    
+                    
+                    // MARK: - MapKit
+                    NavigationLink("MapKit", destination: MapKitView())
+                    
+                    
+                    // MARK: - GameScene
+                    NavigationLink("GameScene", destination: GameSceneView())
+                    
+                    
+                    // MARK: - AVKit
+                    NavigationLink("AVKit", destination: AVView())
+                    
+                    
+                    // MARK: - Tabbar
                     NavigationLink("Tabbar", destination: TabbarView())
+                    
+                    
+                    // MARK: - PageTabView
+                    NavigationLink("PageTabView", destination: PageTabView())
+                    
+                    
+                    // MARK: - GridView
+                    NavigationLink("GridView", destination: GridView())
+                    
+                    
+                    // MARK: - Picker
+                    DisclosureGroup("Show picker") {
+                        
+                        Picker("Select something", selection: $selectedIndex) {
+                            ForEach(0..<listString.count) {
+                                Text(listString[$0])
+                            }
+                        }
+                        
+                        DatePicker(formatter.string(from: selectedDate), selection: $selectedDate, displayedComponents: .date)
+                        
+                        DatePicker("Your date", selection: $selectedDate)
+                            .datePickerStyle(GraphicalDatePickerStyle())
+                            .labelsHidden()
+                    }
                 }
                 
                 // MARK: - List
@@ -124,18 +160,19 @@ struct ContentView: View {
                         .onDelete(perform: removeNumber)
                     }
                     Button("Add number") {
-                        numbers.append((numbers.last ?? 0) + 1)
+                        withAnimation {
+                            numbers.append((numbers.last ?? 0) + 1)
+                        }
                     }
                     .foregroundColor(global.primaryColor)
                 }
                 
                 Section {
-                    NavigationLink("RoundedButton", destination: RoundedButton(title: "Action", action: {}))
                     // MARK: - Present View
                     Button("Private things") {
                         let context = LAContext()
                         var error: NSError?
-                        
+                        // MARK: - Biometrics
                         if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
                             let reason = "Need to unlock your data!"
                             context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { (success, error) in
@@ -151,16 +188,8 @@ struct ContentView: View {
                 }
                 
                 Section {
-                    // MARK: - Spirograph
-                    NavigationLink("Spirograph", destination: SpirographView())
-                    
-                    
-                    // MARK: - Neumorphism
-                    NavigationLink("Neumorphism", destination: NeumorphismExampleView())
-                    
-                    
-                    // MARK: - MapKit
-                    NavigationLink("MapKit", destination: MapKitView())
+                    // MARK: - Link
+                    Link("My profile", destination: URL(string: "https://facebook.com/anhbym")!)
                 }
             }
             .navigationTitle(screenTitle)
@@ -187,10 +216,5 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
-}
-
-struct Person: Identifiable {
-    var id: Int
-    var name: String
 }
 
