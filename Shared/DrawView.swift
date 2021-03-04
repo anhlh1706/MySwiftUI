@@ -11,6 +11,10 @@ struct DrawView: View {
     
     @EnvironmentObject var global: Global
     
+    @Namespace private var animation
+    
+    @State private var flowerFlip = false
+    
     @State private var petalOffset: Double = -20
     
     @State private var petalWidth: Double = 40
@@ -52,12 +56,20 @@ struct DrawView: View {
                 
                 HStack(spacing: 55) {
                     Flower(petalOffset: petalOffset, petalWidth: petalWidth)
-                        .stroke(global.primaryColor, lineWidth: 1)
-                        .frame(width: 140, height: 140)
-                    
-                    Flower(petalOffset: petalOffset, petalWidth: petalWidth)
                         .fill(global.primaryColor, style: FillStyle(eoFill: true))
                         .frame(width: 140, height: 140)
+                        .matchedGeometryEffect(id: "Flower", in: animation)
+                    
+                    if flowerFlip {
+                        Flower(petalOffset: petalOffset, petalWidth: petalWidth)
+                            .stroke(global.primaryColor, lineWidth: 1)
+                            .frame(width: 140, height: 140)
+                    }
+                }
+                .onTapGesture {
+                    withAnimation {
+                        flowerFlip.toggle()
+                    }
                 }
                 
                 Color(UIColor.clear).frame(height: 20)
