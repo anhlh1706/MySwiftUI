@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TabbarView: View {
     
-    @EnvironmentObject var percent: Global
+    @EnvironmentObject var global: Global
     
     var body: some View {
         TabView {
@@ -36,7 +36,6 @@ struct TabbarView: View {
                     Text("Cloud")
                 }
         }
-        .accentColor(percent.primaryColor)
-        .environmentObject(percent)
+        .accentColor(global.primaryColor)
     }
 }

@@ -15,6 +15,7 @@ extension Color {
     static let lightEnd = Color(red: 30 / 255, green: 80 / 255, blue: 120 / 255)
 }
 
+// MARK: - Button Style
 struct SimpleButtonStyle: ButtonStyle {
     
     func makeBody(configuration: Configuration) -> some View {
@@ -75,27 +76,6 @@ struct ColorfulButtonStyle: ButtonStyle {
     }
 }
 
-struct DarkBackground<S: Shape>: View {
-    var isHighlighted: Bool
-    var shape: S
-    
-    var body: some View {
-        if isHighlighted {
-            shape
-                .fill(LinearGradient(gradient: Gradient(colors: [.darkEnd, .darkStart]), startPoint: .topLeading, endPoint: .bottomTrailing))
-                .overlay(shape.stroke(LinearGradient(gradient: Gradient(colors: [.darkStart, .darkEnd]), startPoint: .topLeading, endPoint: .bottomTrailing), lineWidth: 4))
-                .shadow(color: .darkStart, radius: 10, x: 5, y: 5)
-                .shadow(color: .darkEnd, radius: 10, x: -5, y: -5)
-        } else {
-            shape
-                .fill(LinearGradient(gradient: Gradient(colors: [.darkStart, .darkEnd]), startPoint: .topLeading, endPoint: .bottomTrailing))
-                .overlay(shape.stroke(LinearGradient(gradient: Gradient(colors: [.darkEnd, .darkStart]), startPoint: .topLeading, endPoint: .bottomTrailing), lineWidth: 4))
-                .shadow(color: .darkStart, radius: 10, x: -10, y: -10)
-                .shadow(color: .darkEnd, radius: 10, x: 10, y: 10)
-        }
-    }
-}
-
 struct ColorfulBackground<S: Shape>: View {
     var isHighlighted: Bool
     var shape: S
@@ -117,6 +97,31 @@ struct ColorfulBackground<S: Shape>: View {
     }
 }
 
+
+// MARK: - Background
+struct DarkBackground<S: Shape>: View {
+    var isHighlighted: Bool
+    var shape: S
+    
+    var body: some View {
+        if isHighlighted {
+            shape
+                .fill(LinearGradient(gradient: Gradient(colors: [.darkEnd, .darkStart]), startPoint: .topLeading, endPoint: .bottomTrailing))
+                .overlay(shape.stroke(LinearGradient(gradient: Gradient(colors: [.darkStart, .darkEnd]), startPoint: .topLeading, endPoint: .bottomTrailing), lineWidth: 4))
+                .shadow(color: .darkStart, radius: 10, x: 5, y: 5)
+                .shadow(color: .darkEnd, radius: 10, x: -5, y: -5)
+        } else {
+            shape
+                .fill(LinearGradient(gradient: Gradient(colors: [.darkStart, .darkEnd]), startPoint: .topLeading, endPoint: .bottomTrailing))
+                .overlay(shape.stroke(LinearGradient(gradient: Gradient(colors: [.darkEnd, .darkStart]), startPoint: .topLeading, endPoint: .bottomTrailing), lineWidth: 4))
+                .shadow(color: .darkStart, radius: 10, x: -10, y: -10)
+                .shadow(color: .darkEnd, radius: 10, x: 10, y: 10)
+        }
+    }
+}
+
+
+// MARK: - Toggle Style
 struct DarkToggleStyle: ToggleStyle {
     func makeBody(configuration: Configuration) -> some View {
         Button(action: {
@@ -145,6 +150,7 @@ struct ColorfulToggleStyle: ToggleStyle {
     }
 }
 
+// MARK: - Main View
 struct NeumorphismExampleView: View {
     
     @State private var isToggled = false

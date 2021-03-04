@@ -27,6 +27,5 @@ struct PageTabView: View {
         .tabViewStyle(PageTabViewStyle())
         .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
         .accentColor(percent.primaryColor)
-        .environmentObject(percent)
     }
 }

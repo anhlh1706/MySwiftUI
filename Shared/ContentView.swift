@@ -14,8 +14,7 @@ var formatter: DateFormatter = {
     return formatter
 }()
 
-// @State - private locally
-// @StateObject - reference private locally
+// @StateObject - using instead of @ObsevableObject to make sure object will exist before the owned view is created
 struct ContentView: View {
     
     let listString = "Everyone likes the weekend, it’s time to people do their work which they don’t have time to do in the weekdays."
@@ -47,7 +46,7 @@ struct ContentView: View {
     
     @State private var selectedDate = Date()
     
-    // UserDefaults
+    // UserDefaults, @SceneStorage to save every scenes
     @AppStorage("selectedIndex") var selectedIndex = 2
     
     // Changes following device text scale factor automatically
@@ -57,7 +56,7 @@ struct ContentView: View {
         NavigationView {
             Form {
                 Section {
-                    Text("\(Date(), formatter: formatter)")
+                    Text(Date(), formatter: formatter)
                     
                     #if os(iOS)
                     Text("Screen class: \(sizeClass == .regular ? "Regular" : "Compact")")
@@ -198,7 +197,6 @@ struct ContentView: View {
             }
         }
         .accentColor(global.primaryColor)
-        .environmentObject(global)
     }
     
     func showAlert(title: String, msg: String = "") {
