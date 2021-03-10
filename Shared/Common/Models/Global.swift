@@ -8,13 +8,15 @@
 import Foundation
 import SwiftUI
 
+var formatter: DateFormatter = {
+    let formatter = DateFormatter()
+    formatter.dateStyle = .full
+    return formatter
+}()
+
 class Global: ObservableObject {
     
-    var primaryColor: Color = .pink { didSet { update() } }
+    @Published var primaryColor: Color = .pink
     
-    var percent = 1 { didSet { update() } }
-    
-    private func update() {
-        objectWillChange.send()
-    }
+    @Published var percent = 1
 }

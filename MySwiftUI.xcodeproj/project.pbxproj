@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,22 @@
 		E635274B25F0888E0061721D /* PageTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E635274925F0888D0061721D /* PageTabView.swift */; };
 		E63F7BEB25DFB50A004E78A0 /* Neumorphism.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63F7BEA25DFB50A004E78A0 /* Neumorphism.swift */; };
 		E63F7BEC25DFB50A004E78A0 /* Neumorphism.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63F7BEA25DFB50A004E78A0 /* Neumorphism.swift */; };
+		E64814B725F8818B000B13D8 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = E64814B625F8818B000B13D8 /* SwiftSoup */; };
+		E64814BE25F881A2000B13D8 /* DevelopmentDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64814BD25F881A2000B13D8 /* DevelopmentDay.swift */; };
+		E64814C225F881F3000B13D8 /* ContributionsGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64814C125F881F3000B13D8 /* ContributionsGraphView.swift */; };
+		E64814C625F885F8000B13D8 /* GithubParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64814C525F885F8000B13D8 /* GithubParser.swift */; };
+		E64814D025F8A84E000B13D8 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E64814CF25F8A84E000B13D8 /* WidgetKit.framework */; };
+		E64814D225F8A84E000B13D8 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E64814D125F8A84E000B13D8 /* SwiftUI.framework */; };
+		E64814D525F8A84E000B13D8 /* MyGithub.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64814D425F8A84E000B13D8 /* MyGithub.swift */; };
+		E64814D825F8A852000B13D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E64814D725F8A852000B13D8 /* Assets.xcassets */; };
+		E64814DA25F8A852000B13D8 /* MyGithub.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = E64814D625F8A84E000B13D8 /* MyGithub.intentdefinition */; };
+		E64814DB25F8A852000B13D8 /* MyGithub.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = E64814D625F8A84E000B13D8 /* MyGithub.intentdefinition */; };
+		E64814DE25F8A852000B13D8 /* MyGithubExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E64814CD25F8A84E000B13D8 /* MyGithubExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E648150825F8ABB6000B13D8 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E845BC25EF7C1700CA0FD8 /* Global.swift */; };
+		E648153825F8B07C000B13D8 /* DevelopmentDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64814BD25F881A2000B13D8 /* DevelopmentDay.swift */; };
+		E648154325F8B0CE000B13D8 /* GithubParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64814C525F885F8000B13D8 /* GithubParser.swift */; };
+		E648154825F8B0D8000B13D8 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = E648154725F8B0D8000B13D8 /* SwiftSoup */; };
+		E648154C25F8B20C000B13D8 /* ContributionsGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64814C125F881F3000B13D8 /* ContributionsGraphView.swift */; };
 		E653AB53258A07EB003674C8 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E653AB52258A07EB003674C8 /* RoundedButton.swift */; };
 		E653AB54258A07EB003674C8 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E653AB52258A07EB003674C8 /* RoundedButton.swift */; };
 		E67C98862592E281005D1EBA /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67C98852592E281005D1EBA /* TabbarView.swift */; };
@@ -43,6 +59,30 @@
 		E6E845D725EF985D00CA0FD8 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E845D525EF985D00CA0FD8 /* GameScene.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		E64814DC25F8A852000B13D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E621C32E2589A5FA00878BA8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E64814CC25F8A84E000B13D8;
+			remoteInfo = MyGithubExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E64814E325F8A852000B13D8 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E64814DE25F8A852000B13D8 /* MyGithubExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		E621C3332589A5FA00878BA8 /* MySwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySwiftUIApp.swift; sourceTree = "<group>"; };
 		E621C3342589A5FA00878BA8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +95,17 @@
 		E622793C25B17DE000AC5E7B /* PresentedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentedView.swift; sourceTree = "<group>"; };
 		E635274925F0888D0061721D /* PageTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTabView.swift; sourceTree = "<group>"; };
 		E63F7BEA25DFB50A004E78A0 /* Neumorphism.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Neumorphism.swift; sourceTree = "<group>"; };
+		E64814BD25F881A2000B13D8 /* DevelopmentDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopmentDay.swift; sourceTree = "<group>"; };
+		E64814C125F881F3000B13D8 /* ContributionsGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributionsGraphView.swift; sourceTree = "<group>"; };
+		E64814C525F885F8000B13D8 /* GithubParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubParser.swift; sourceTree = "<group>"; };
+		E64814CD25F8A84E000B13D8 /* MyGithubExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyGithubExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E64814CF25F8A84E000B13D8 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		E64814D125F8A84E000B13D8 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		E64814D425F8A84E000B13D8 /* MyGithub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGithub.swift; sourceTree = "<group>"; };
+		E64814D625F8A84E000B13D8 /* MyGithub.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = MyGithub.intentdefinition; sourceTree = "<group>"; };
+		E64814D725F8A852000B13D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E64814D925F8A852000B13D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E64814DF25F8A852000B13D8 /* MyGithubExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyGithubExtension.entitlements; sourceTree = "<group>"; };
 		E653AB52258A07EB003674C8 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		E67C98852592E281005D1EBA /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
 		E68B03A825DD23F600F387D7 /* SpirographView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpirographView.swift; sourceTree = "<group>"; };
@@ -73,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E64814B725F8818B000B13D8 /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,15 +135,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E64814CA25F8A84E000B13D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E64814D225F8A84E000B13D8 /* SwiftUI.framework in Frameworks */,
+				E64814D025F8A84E000B13D8 /* WidgetKit.framework in Frameworks */,
+				E648154825F8B0D8000B13D8 /* SwiftSoup in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		E621C32D2589A5FA00878BA8 = {
 			isa = PBXGroup;
 			children = (
+				E64814DF25F8A852000B13D8 /* MyGithubExtension.entitlements */,
 				E621C3322589A5FA00878BA8 /* Shared */,
 				E621C33C2589A5FE00878BA8 /* iOS */,
 				E621C3432589A5FE00878BA8 /* macOS */,
+				E64814D325F8A84E000B13D8 /* MyGithubWidget */,
+				E64814CE25F8A84E000B13D8 /* Frameworks */,
 				E621C33B2589A5FE00878BA8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,6 +164,7 @@
 		E621C3322589A5FA00878BA8 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				E64814BA25F88191000B13D8 /* Widget */,
 				E6E845C125EF7C4700CA0FD8 /* Common */,
 				E621C3332589A5FA00878BA8 /* MySwiftUIApp.swift */,
 				E621C3342589A5FA00878BA8 /* ContentView.swift */,
@@ -124,6 +190,7 @@
 			children = (
 				E621C33A2589A5FE00878BA8 /* MySwiftUI.app */,
 				E621C3422589A5FE00878BA8 /* MySwiftUI.app */,
+				E64814CD25F8A84E000B13D8 /* MyGithubExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,6 +210,36 @@
 				E621C3452589A5FE00878BA8 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		E64814BA25F88191000B13D8 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				E64814BD25F881A2000B13D8 /* DevelopmentDay.swift */,
+				E64814C125F881F3000B13D8 /* ContributionsGraphView.swift */,
+				E64814C525F885F8000B13D8 /* GithubParser.swift */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		E64814CE25F8A84E000B13D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E64814CF25F8A84E000B13D8 /* WidgetKit.framework */,
+				E64814D125F8A84E000B13D8 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E64814D325F8A84E000B13D8 /* MyGithubWidget */ = {
+			isa = PBXGroup;
+			children = (
+				E64814D425F8A84E000B13D8 /* MyGithub.swift */,
+				E64814D625F8A84E000B13D8 /* MyGithub.intentdefinition */,
+				E64814D725F8A852000B13D8 /* Assets.xcassets */,
+				E64814D925F8A852000B13D8 /* Info.plist */,
+			);
+			path = MyGithubWidget;
 			sourceTree = "<group>";
 		};
 		E6AE2AFC25C7A4F600CC1EF2 /* ViewModifier */ = {
@@ -180,12 +277,17 @@
 				E621C3362589A5FE00878BA8 /* Sources */,
 				E621C3372589A5FE00878BA8 /* Frameworks */,
 				E621C3382589A5FE00878BA8 /* Resources */,
+				E64814E325F8A852000B13D8 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E64814DD25F8A852000B13D8 /* PBXTargetDependency */,
 			);
 			name = "MySwiftUI (iOS)";
+			packageProductDependencies = (
+				E64814B625F8818B000B13D8 /* SwiftSoup */,
+			);
 			productName = "MySwiftUI (iOS)";
 			productReference = E621C33A2589A5FE00878BA8 /* MySwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -207,13 +309,33 @@
 			productReference = E621C3422589A5FE00878BA8 /* MySwiftUI.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E64814CC25F8A84E000B13D8 /* MyGithubExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E64814E025F8A852000B13D8 /* Build configuration list for PBXNativeTarget "MyGithubExtension" */;
+			buildPhases = (
+				E64814C925F8A84E000B13D8 /* Sources */,
+				E64814CA25F8A84E000B13D8 /* Frameworks */,
+				E64814CB25F8A84E000B13D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyGithubExtension;
+			packageProductDependencies = (
+				E648154725F8B0D8000B13D8 /* SwiftSoup */,
+			);
+			productName = MyGithubExtension;
+			productReference = E64814CD25F8A84E000B13D8 /* MyGithubExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		E621C32E2589A5FA00878BA8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1220;
+				LastSwiftUpdateCheck = 1230;
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
 					E621C3392589A5FE00878BA8 = {
@@ -221,6 +343,9 @@
 					};
 					E621C3412589A5FE00878BA8 = {
 						CreatedOnToolsVersion = 12.2;
+					};
+					E64814CC25F8A84E000B13D8 = {
+						CreatedOnToolsVersion = 12.3;
 					};
 				};
 			};
@@ -233,12 +358,16 @@
 				Base,
 			);
 			mainGroup = E621C32D2589A5FA00878BA8;
+			packageReferences = (
+				E64814B525F8818B000B13D8 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
 			productRefGroup = E621C33B2589A5FE00878BA8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				E621C3392589A5FE00878BA8 /* MySwiftUI (iOS) */,
 				E621C3412589A5FE00878BA8 /* MySwiftUI (macOS) */,
+				E64814CC25F8A84E000B13D8 /* MyGithubExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -260,6 +389,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E64814CB25F8A84E000B13D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E64814D825F8A852000B13D8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -268,7 +405,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6E845D625EF985D00CA0FD8 /* GameScene.swift in Sources */,
+				E64814C625F885F8000B13D8 /* GithubParser.swift in Sources */,
 				E621C3482589A5FE00878BA8 /* ContentView.swift in Sources */,
+				E64814DB25F8A852000B13D8 /* MyGithub.intentdefinition in Sources */,
 				E622793D25B17DE000AC5E7B /* PresentedView.swift in Sources */,
 				E68B03A925DD23F600F387D7 /* SpirographView.swift in Sources */,
 				E6913B5A25C804FF00042134 /* DrawView.swift in Sources */,
@@ -280,6 +419,8 @@
 				E6E845BD25EF7C1700CA0FD8 /* Global.swift in Sources */,
 				E635274A25F0888E0061721D /* PageTabView.swift in Sources */,
 				E6E845CD25EF89FA00CA0FD8 /* GridView.swift in Sources */,
+				E64814C225F881F3000B13D8 /* ContributionsGraphView.swift in Sources */,
+				E64814BE25F881A2000B13D8 /* DevelopmentDay.swift in Sources */,
 				E6AE2AFE25C7A50600CC1EF2 /* PrimaryButtonModifier.swift in Sources */,
 				E621C3462589A5FE00878BA8 /* MySwiftUIApp.swift in Sources */,
 				E63F7BEB25DFB50A004E78A0 /* Neumorphism.swift in Sources */,
@@ -309,7 +450,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E64814C925F8A84E000B13D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E648153825F8B07C000B13D8 /* DevelopmentDay.swift in Sources */,
+				E648154C25F8B20C000B13D8 /* ContributionsGraphView.swift in Sources */,
+				E648150825F8ABB6000B13D8 /* Global.swift in Sources */,
+				E64814D525F8A84E000B13D8 /* MyGithub.swift in Sources */,
+				E648154325F8B0CE000B13D8 /* GithubParser.swift in Sources */,
+				E64814DA25F8A852000B13D8 /* MyGithub.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E64814DD25F8A852000B13D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E64814CC25F8A84E000B13D8 /* MyGithubExtension */;
+			targetProxy = E64814DC25F8A852000B13D8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		E621C34C2589A5FE00878BA8 /* Debug */ = {
@@ -426,6 +588,7 @@
 		E621C34F2589A5FE00878BA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MySwiftUI.entitlements;
@@ -451,6 +614,7 @@
 		E621C3502589A5FE00878BA8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MySwiftUI.entitlements;
@@ -524,6 +688,57 @@
 			};
 			name = Release;
 		};
+		E64814E125F8A852000B13D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = MyGithubExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G5XRG6XD8F;
+				INFOPLIST_FILE = MyGithubWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.anhlh.MySwiftUI.MyGithub;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E64814E225F8A852000B13D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = MyGithubExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G5XRG6XD8F;
+				INFOPLIST_FILE = MyGithubWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.anhlh.MySwiftUI.MyGithub;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -554,7 +769,40 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		E64814E025F8A852000B13D8 /* Build configuration list for PBXNativeTarget "MyGithubExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E64814E125F8A852000B13D8 /* Debug */,
+				E64814E225F8A852000B13D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E64814B525F8818B000B13D8 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E64814B625F8818B000B13D8 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E64814B525F8818B000B13D8 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+		E648154725F8B0D8000B13D8 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E64814B525F8818B000B13D8 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E621C32E2589A5FA00878BA8 /* Project object */;
 }

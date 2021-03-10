@@ -8,13 +8,6 @@
 import SwiftUI
 import LocalAuthentication
 
-var formatter: DateFormatter = {
-    let formatter = DateFormatter()
-    formatter.dateStyle = .full
-    return formatter
-}()
-
-// @StateObject - using instead of @ObsevableObject to make sure object will exist before the owned view is created
 struct ContentView: View {
     
     let listString = "Everyone likes the weekend, it’s time to people do their work which they don’t have time to do in the weekdays."
@@ -122,6 +115,10 @@ struct ContentView: View {
                     
                     // MARK: - GridView
                     NavigationLink("GridView", destination: GridView())
+                    
+                    
+                    // MARK: - Github
+                    NavigationLink("Github", destination: GithubView())
                     
                     
                     // MARK: - Picker
