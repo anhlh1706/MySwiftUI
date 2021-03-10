@@ -62,7 +62,6 @@ struct AnimationView: View {
                 
                 Button("Tap") { }
                     .modifier(PrimaryButtonModifier())
-                    .scaleEffect(zoomAmount) // scale
                     .overlay(
                         Circle()
                             .stroke(Color.red)
@@ -92,7 +91,6 @@ struct AnimationView: View {
                 
                 Spacer()
             }
-            
             .onAppear(perform: {
                 zoomAmount = 1
             })
