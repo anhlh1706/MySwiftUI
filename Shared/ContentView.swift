@@ -21,6 +21,8 @@ struct ContentView: View {
     
     @State private var presentingModal = false
     
+    @State private var showingExporter = false
+    
     @State private var numbers = [1, 2, 3]
     
     @State private var screenTitle = "System Design"
@@ -184,6 +186,12 @@ struct ContentView: View {
                 }
                 
                 Section {
+                    Button("Export file") {
+                        showingExporter.toggle()
+                    }
+                }
+                
+                Section {
                     // MARK: - Link
                     Link("My profile", destination: URL(string: "https://facebook.com/anhbym")!)
                 }
@@ -194,6 +202,14 @@ struct ContentView: View {
             }
         }
         .accentColor(global.primaryColor)
+        .fileExporter(isPresented: $showingExporter, document: ImageDocument(image: UIImage(named: "banner")), contentType: .png) { result in
+            switch result {
+            case .success(let data):
+                print(data)
+            case .failure(let error):
+                print(error)
+            }
+        }
     }
     
     func showAlert(title: String, msg: String = "") {
