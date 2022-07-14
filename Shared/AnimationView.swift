@@ -29,7 +29,7 @@ struct AnimationView: View {
             
             VStack {
                 HStack(spacing: 0) {
-                    ForEach(0..<greeting.count) { index in
+                    ForEach(0..<14) { index in
                         Text(String(greeting[index]))
                             .padding(3)
                             .font(.title)

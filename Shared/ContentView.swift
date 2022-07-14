@@ -87,6 +87,11 @@ struct ContentView: View {
                 }
                 
                 Section {
+                    // MARK: - DesignCode
+                    NavigationLink("DesignCode", destination: DesignCodeView())
+                }
+                
+                Section {
                     // MARK: - Spirograph
                     NavigationLink("Spirograph", destination: SpirographView())
                     
