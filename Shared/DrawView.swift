@@ -31,6 +31,7 @@ struct DrawView: View {
                 Triangle()
                     .stroke(global.primaryColor, style: StrokeStyle(lineWidth: 18, lineCap: .round, lineJoin: .round))
                     .frame(width: 220, height: 220)
+                    .id(1)
                 
                 Color(UIColor.clear).frame(height: 70)
                 
