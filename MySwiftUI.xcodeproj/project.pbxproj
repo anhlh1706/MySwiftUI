@@ -38,6 +38,8 @@
 		E6435775288072BB0024196A /* GradientPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6435774288072BB0024196A /* GradientPreviewView.swift */; };
 		E6435777288074950024196A /* BindingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6435776288074950024196A /* BindingView.swift */; };
 		E6435779288076690024196A /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6435778288076690024196A /* ModalView.swift */; };
+		E643577B288079B20024196A /* RedactedPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E643577A288079B20024196A /* RedactedPlaceholder.swift */; };
+		E643577D28807B3E0024196A /* CardScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E643577C28807B3E0024196A /* CardScrollView.swift */; };
 		E64814B725F8818B000B13D8 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = E64814B625F8818B000B13D8 /* SwiftSoup */; };
 		E64814BE25F881A2000B13D8 /* DevelopmentDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64814BD25F881A2000B13D8 /* DevelopmentDay.swift */; };
 		E64814C225F881F3000B13D8 /* ContributionsGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64814C125F881F3000B13D8 /* ContributionsGraphView.swift */; };
@@ -58,6 +60,13 @@
 		E653AB54258A07EB003674C8 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E653AB52258A07EB003674C8 /* RoundedButton.swift */; };
 		E67C98862592E281005D1EBA /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67C98852592E281005D1EBA /* TabbarView.swift */; };
 		E67C98872592E281005D1EBA /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67C98852592E281005D1EBA /* TabbarView.swift */; };
+		E68A272D2885B18800952CA4 /* LoadingAnimView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68A272C2885B18800952CA4 /* LoadingAnimView.swift */; };
+		E68A272F2885B44900952CA4 /* CustomModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68A272E2885B44900952CA4 /* CustomModalView.swift */; };
+		E68A27322885B5D500952CA4 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68A27312885B5D500952CA4 /* View.swift */; };
+		E68A27342885B72200952CA4 /* TrackableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68A27332885B72200952CA4 /* TrackableScrollView.swift */; };
+		E68A27362885B89900952CA4 /* TermAndPrivacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68A27352885B89900952CA4 /* TermAndPrivacy.swift */; };
+		E68A27392885B9A100952CA4 /* ShareSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68A27382885B9A100952CA4 /* ShareSheetView.swift */; };
+		E68A273B2885BA8A00952CA4 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68A273A2885BA8A00952CA4 /* UIApplication.swift */; };
 		E68B03A925DD23F600F387D7 /* SpirographView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68B03A825DD23F600F387D7 /* SpirographView.swift */; };
 		E68B03AA25DD23F600F387D7 /* SpirographView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68B03A825DD23F600F387D7 /* SpirographView.swift */; };
 		E6913B5A25C804FF00042134 /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6913B5925C804FF00042134 /* DrawView.swift */; };
@@ -134,6 +143,8 @@
 		E6435774288072BB0024196A /* GradientPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientPreviewView.swift; sourceTree = "<group>"; };
 		E6435776288074950024196A /* BindingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingView.swift; sourceTree = "<group>"; };
 		E6435778288076690024196A /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
+		E643577A288079B20024196A /* RedactedPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedactedPlaceholder.swift; sourceTree = "<group>"; };
+		E643577C28807B3E0024196A /* CardScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardScrollView.swift; sourceTree = "<group>"; };
 		E64814BD25F881A2000B13D8 /* DevelopmentDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopmentDay.swift; sourceTree = "<group>"; };
 		E64814C125F881F3000B13D8 /* ContributionsGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributionsGraphView.swift; sourceTree = "<group>"; };
 		E64814C525F885F8000B13D8 /* GithubParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubParser.swift; sourceTree = "<group>"; };
@@ -147,6 +158,13 @@
 		E64814DF25F8A852000B13D8 /* MyGithubExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyGithubExtension.entitlements; sourceTree = "<group>"; };
 		E653AB52258A07EB003674C8 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		E67C98852592E281005D1EBA /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
+		E68A272C2885B18800952CA4 /* LoadingAnimView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingAnimView.swift; sourceTree = "<group>"; };
+		E68A272E2885B44900952CA4 /* CustomModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModalView.swift; sourceTree = "<group>"; };
+		E68A27312885B5D500952CA4 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		E68A27332885B72200952CA4 /* TrackableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackableScrollView.swift; sourceTree = "<group>"; };
+		E68A27352885B89900952CA4 /* TermAndPrivacy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermAndPrivacy.swift; sourceTree = "<group>"; };
+		E68A27382885B9A100952CA4 /* ShareSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheetView.swift; sourceTree = "<group>"; };
+		E68A273A2885BA8A00952CA4 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		E68B03A825DD23F600F387D7 /* SpirographView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpirographView.swift; sourceTree = "<group>"; };
 		E6913B5925C804FF00042134 /* DrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
 		E6AE2AF725C79E0300CC1EF2 /* AnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationView.swift; sourceTree = "<group>"; };
@@ -275,6 +293,13 @@
 				E6435774288072BB0024196A /* GradientPreviewView.swift */,
 				E6435776288074950024196A /* BindingView.swift */,
 				E6435778288076690024196A /* ModalView.swift */,
+				E643577A288079B20024196A /* RedactedPlaceholder.swift */,
+				E643577C28807B3E0024196A /* CardScrollView.swift */,
+				E68A272C2885B18800952CA4 /* LoadingAnimView.swift */,
+				E68A272E2885B44900952CA4 /* CustomModalView.swift */,
+				E68A27332885B72200952CA4 /* TrackableScrollView.swift */,
+				E68A27352885B89900952CA4 /* TermAndPrivacy.swift */,
+				E68A27382885B9A100952CA4 /* ShareSheetView.swift */,
 			);
 			path = DesignCode;
 			sourceTree = "<group>";
@@ -309,6 +334,15 @@
 			path = MyGithubWidget;
 			sourceTree = "<group>";
 		};
+		E68A27302885B5CE00952CA4 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E68A27312885B5D500952CA4 /* View.swift */,
+				E68A273A2885BA8A00952CA4 /* UIApplication.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		E6AE2AFC25C7A4F600CC1EF2 /* ViewModifier */ = {
 			isa = PBXGroup;
 			children = (
@@ -320,6 +354,7 @@
 		E6E845C125EF7C4700CA0FD8 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				E68A27302885B5CE00952CA4 /* Extension */,
 				E6E845C225EF7C5200CA0FD8 /* Models */,
 				E6AE2AFC25C7A4F600CC1EF2 /* ViewModifier */,
 				E6D7079027A13A8E006D6520 /* ImageDocument.swift */,
@@ -479,18 +514,23 @@
 				E64814DB25F8A852000B13D8 /* MyGithub.intentdefinition in Sources */,
 				E6435775288072BB0024196A /* GradientPreviewView.swift in Sources */,
 				E643576928806EC80024196A /* MatchedGeometryEffect.swift in Sources */,
+				E643577B288079B20024196A /* RedactedPlaceholder.swift in Sources */,
+				E68A273B2885BA8A00952CA4 /* UIApplication.swift in Sources */,
 				E622793D25B17DE000AC5E7B /* PresentedView.swift in Sources */,
+				E68A27362885B89900952CA4 /* TermAndPrivacy.swift in Sources */,
 				E6435777288074950024196A /* BindingView.swift in Sources */,
 				E68B03A925DD23F600F387D7 /* SpirographView.swift in Sources */,
 				E6913B5A25C804FF00042134 /* DrawView.swift in Sources */,
 				E643576128806EC80024196A /* DragGesture.swift in Sources */,
 				E643576A28806EC80024196A /* Animation.swift in Sources */,
 				E653AB53258A07EB003674C8 /* RoundedButton.swift in Sources */,
+				E68A272F2885B44900952CA4 /* CustomModalView.swift in Sources */,
 				E6E845B425EF6DA100CA0FD8 /* MapKitView.swift in Sources */,
 				E643576228806EC80024196A /* Rotation3D.swift in Sources */,
 				E643576F288070750024196A /* LazyGridLayoutView.swift in Sources */,
 				E6AE2AF825C79E0300CC1EF2 /* AnimationView.swift in Sources */,
 				E6E845C425EF821800CA0FD8 /* AVView.swift in Sources */,
+				E68A27392885B9A100952CA4 /* ShareSheetView.swift in Sources */,
 				E67C98862592E281005D1EBA /* TabbarView.swift in Sources */,
 				E643576628806EC80024196A /* BackgroundBlurView.swift in Sources */,
 				E6E845BD25EF7C1700CA0FD8 /* Global.swift in Sources */,
@@ -498,9 +538,12 @@
 				E635274A25F0888E0061721D /* PageTabView.swift in Sources */,
 				E6E845CD25EF89FA00CA0FD8 /* GridView.swift in Sources */,
 				E643576728806EC80024196A /* Text.swift in Sources */,
+				E643577D28807B3E0024196A /* CardScrollView.swift in Sources */,
 				E64357712880711E0024196A /* LazyStackView.swift in Sources */,
 				E64814C225F881F3000B13D8 /* ContributionsGraphView.swift in Sources */,
 				E643576428806EC80024196A /* SideBar.swift in Sources */,
+				E68A27322885B5D500952CA4 /* View.swift in Sources */,
+				E68A272D2885B18800952CA4 /* LoadingAnimView.swift in Sources */,
 				E643576D28806EC80024196A /* TabView.swift in Sources */,
 				E64814BE25F881A2000B13D8 /* DevelopmentDay.swift in Sources */,
 				E6D7079127A13A8E006D6520 /* ImageDocument.swift in Sources */,
@@ -508,6 +551,7 @@
 				E6AE2AFE25C7A50600CC1EF2 /* PrimaryButtonModifier.swift in Sources */,
 				E6435779288076690024196A /* ModalView.swift in Sources */,
 				E621C3462589A5FE00878BA8 /* MySwiftUIApp.swift in Sources */,
+				E68A27342885B72200952CA4 /* TrackableScrollView.swift in Sources */,
 				E63F7BEB25DFB50A004E78A0 /* Neumorphism.swift in Sources */,
 				E643576528806EC80024196A /* LongPressGesture.swift in Sources */,
 				E643576828806EC80024196A /* Mask.swift in Sources */,
@@ -686,7 +730,7 @@
 				DEVELOPMENT_TEAM = H5QVB3WQM5;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -712,7 +756,7 @@
 				DEVELOPMENT_TEAM = H5QVB3WQM5;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

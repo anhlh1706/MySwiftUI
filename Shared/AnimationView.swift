@@ -35,7 +35,7 @@ struct AnimationView: View {
                             .font(.title)
                             .background(isBlue ? Color.blue : Color.red)
                             .offset(dragAmount)
-                            .animation(Animation.default.delay(Double(index) / 20))
+                            .animation(Animation.default.delay(Double(index) / 20), value: dragAmount)
                     }
                 }
                 .gesture(
@@ -56,7 +56,7 @@ struct AnimationView: View {
                     .modifier(PrimaryButtonModifier())
                     .scaleEffect(zoomAmount) // scale
                     .blur(radius: (zoomAmount - 1) * 3) // blur view when zoom in
-                    .animation(.easeOut) // apply animate
+                    .animation(.easeOut, value: zoomAmount) // apply animate
                 
                 Spacer()
                 
@@ -67,10 +67,7 @@ struct AnimationView: View {
                             .stroke(Color.red)
                             .scaleEffect(overlayZoomAmount)
                             .opacity(Double(2 - overlayZoomAmount))
-                            .animation(
-                                Animation.easeIn(duration: 1)
-                                    .repeatForever(autoreverses: false)
-                            )
+                            .animation(Animation.easeIn(duration: 1).repeatForever(autoreverses: false), value: overlayZoomAmount)
                     )
                     .onAppear(perform: {
                         overlayZoomAmount = 2

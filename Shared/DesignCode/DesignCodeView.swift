@@ -10,6 +10,7 @@ import SwiftUI
 struct DesignCodeView: View {
     var body: some View {
         Form {
+            // MARK: View only
             Section {
                 NavigationLink("SideBar", destination: SideBarView())
                 
@@ -20,14 +21,34 @@ struct DesignCodeView: View {
                 NavigationLink("MaskView", destination: MaskView())
                 
                 NavigationLink("TabView", destination: TabViewView())
+                
+                NavigationLink("BackgroundBlurView", destination: BackgroundBlurView())
+                
+                NavigationLink("LazyGridLayoutView", destination: LazyGridLayoutView())
+                
+                NavigationLink("LazyStackView", destination: LazyStackView())
+                
+                NavigationLink("Gradient preview", destination: GradientPreviewView())
             }
             
+            // MARK: User Interactive only
             Section {
                 NavigationLink("LongPressGestureView", destination: LongPressGestureView())
                 
                 NavigationLink("DragGestureView", destination: DragGestureView())
+                
+                NavigationLink("ShareSheetView", destination: ShareSheetView())
+                
+                NavigationLink("TrackableScrollView", destination: MyTrackableScrollView())
+                
+                NavigationLink("BindingView", destination: BindingView())
+                
+                NavigationLink("ModalView", destination: ModalView())
+                
+                NavigationLink("CustomModalView", destination: CustomModalView())
             }
             
+            // MARK: With animation
             Section {
                 NavigationLink("TransitionView", destination: TransitionView())
                 
@@ -39,27 +60,15 @@ struct DesignCodeView: View {
                 
                 NavigationLink("AdvancedMatchedGeometryEffectView", destination: AdvancedMatchedGeometryEffectView())
                 
-                NavigationLink("BackgroundBlurView", destination: BackgroundBlurView())
+                NavigationLink("RedactedPlaceholder", destination: RedactedPlaceholder())
                 
-                NavigationLink("LazyGridLayoutView", destination: LazyGridLayoutView())
+                NavigationLink("CardScrollView", destination: CardScrollView())
                 
-                NavigationLink("LazyStackView", destination: LazyStackView())
-                
-                NavigationLink("Gradient preview", destination: GradientPreviewView())
+                NavigationLink("LoadingAnimView", destination: LoadingAnimView())
             }
             
             Section {
-                NavigationLink("BindingView", destination: BindingView())
-                
-                NavigationLink("ModalView", destination: ModalView())
-                
-                NavigationLink("BindingView", destination: BindingView())
-                
-                NavigationLink("BindingView", destination: BindingView())
-                
-                NavigationLink("BindingView", destination: BindingView())
-                
-                
+                NavigationLink("Term and Privacy", destination: TermAndPrivacyView())
             }
             
             Section {

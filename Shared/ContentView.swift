@@ -35,6 +35,8 @@ struct ContentView: View {
     
     @State private var showAlert = false
     
+    @State private var showActionSheet = false
+    
     @State private var alertTitle = ""
     
     @State private var alertMsg = ""
@@ -132,8 +134,8 @@ struct ContentView: View {
                     DisclosureGroup("Show picker") {
                         
                         Picker("Select something", selection: $selectedIndex) {
-                            ForEach(0..<listString.count) {
-                                Text(listString[$0])
+                            ForEach(listString, id: \.self) {
+                                Text($0)
                             }
                         }
                         
@@ -205,7 +207,19 @@ struct ContentView: View {
             .alert(isPresented: $showAlert) { () -> Alert in
                 Alert(title: Text(alertTitle), message: Text(alertMsg), dismissButton: .default(Text("OK")))
             }
+            .actionSheet(isPresented: $showActionSheet, content: {
+                ActionSheet(title: Text("This is the title"), message: Text("This is the message"), buttons: [
+                    .default(Text("Close me")) {
+                        print("Closed")
+                    },
+                    .default(Text("Close me also")) {
+                        print("Closed 2nd")
+                    },
+                    .cancel()
+                ])
+            })
         }
+        .statusBarHidden(trueOrFalse)
         .accentColor(global.primaryColor)
         .fileExporter(isPresented: $showingExporter, document: ImageDocument(image: UIImage(named: "banner")), contentType: .png) { result in
             switch result {
