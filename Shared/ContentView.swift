@@ -134,10 +134,17 @@ struct ContentView: View {
                     DisclosureGroup("Show picker") {
                         
                         Picker("Select something", selection: $selectedIndex) {
-                            ForEach(listString, id: \.self) {
-                                Text($0)
+                            ForEach(0..<2) {
+                                Text(screenTitle.components(separatedBy: " ")[$0])
                             }
                         }
+                        
+                        Picker("Select something", selection: $selectedIndex) {
+                            ForEach(0..<2) {
+                                Text(screenTitle.components(separatedBy: " ")[$0])
+                            }
+                        }
+                        .pickerStyle(SegmentedPickerStyle())
                         
                         DatePicker(formatter.string(from: selectedDate), selection: $selectedDate, displayedComponents: .date)
                         
@@ -219,7 +226,7 @@ struct ContentView: View {
                 ])
             })
         }
-        .statusBarHidden(trueOrFalse)
+        .statusBar(hidden: trueOrFalse)
         .accentColor(global.primaryColor)
         .fileExporter(isPresented: $showingExporter, document: ImageDocument(image: UIImage(named: "banner")), contentType: .png) { result in
             switch result {

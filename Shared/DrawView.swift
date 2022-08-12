@@ -190,11 +190,11 @@ struct Flower: Shape {
 struct ColorCyclingCircle: View {
     
     var amount = 0.0
-    var steps = 100
+    let steps = 100
     
     var body: some View {
         ZStack {
-            ForEach(0..<steps) { value in
+            ForEach(0..<100) { value in
                 Circle()
                     .inset(by: CGFloat(value))
                     .stroke(color(for: value, brightness: 1), lineWidth: 2)

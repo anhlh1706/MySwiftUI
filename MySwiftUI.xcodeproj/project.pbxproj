@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -40,7 +40,6 @@
 		E6435779288076690024196A /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6435778288076690024196A /* ModalView.swift */; };
 		E643577B288079B20024196A /* RedactedPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E643577A288079B20024196A /* RedactedPlaceholder.swift */; };
 		E643577D28807B3E0024196A /* CardScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E643577C28807B3E0024196A /* CardScrollView.swift */; };
-		E64814B725F8818B000B13D8 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = E64814B625F8818B000B13D8 /* SwiftSoup */; };
 		E64814BE25F881A2000B13D8 /* DevelopmentDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64814BD25F881A2000B13D8 /* DevelopmentDay.swift */; };
 		E64814C225F881F3000B13D8 /* ContributionsGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64814C125F881F3000B13D8 /* ContributionsGraphView.swift */; };
 		E64814C625F885F8000B13D8 /* GithubParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64814C525F885F8000B13D8 /* GithubParser.swift */; };
@@ -54,8 +53,12 @@
 		E648150825F8ABB6000B13D8 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E845BC25EF7C1700CA0FD8 /* Global.swift */; };
 		E648153825F8B07C000B13D8 /* DevelopmentDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64814BD25F881A2000B13D8 /* DevelopmentDay.swift */; };
 		E648154325F8B0CE000B13D8 /* GithubParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64814C525F885F8000B13D8 /* GithubParser.swift */; };
-		E648154825F8B0D8000B13D8 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = E648154725F8B0D8000B13D8 /* SwiftSoup */; };
 		E648154C25F8B20C000B13D8 /* ContributionsGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64814C125F881F3000B13D8 /* ContributionsGraphView.swift */; };
+		E64B0EF528885594005F5FB1 /* SafariViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64B0EF428885594005F5FB1 /* SafariViewHelper.swift */; };
+		E64B0EF72888590C005F5FB1 /* AsynImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64B0EF62888590C005F5FB1 /* AsynImage.swift */; };
+		E64B0EF9288859B0005F5FB1 /* DateFormatted.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64B0EF8288859B0005F5FB1 /* DateFormatted.swift */; };
+		E64B0EFB28885ADC005F5FB1 /* SearchableList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64B0EFA28885ADC005F5FB1 /* SearchableList.swift */; };
+		E64B0EFD28885C37005F5FB1 /* TimeLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64B0EFC28885C37005F5FB1 /* TimeLine.swift */; };
 		E653AB53258A07EB003674C8 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E653AB52258A07EB003674C8 /* RoundedButton.swift */; };
 		E653AB54258A07EB003674C8 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E653AB52258A07EB003674C8 /* RoundedButton.swift */; };
 		E67C98862592E281005D1EBA /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67C98852592E281005D1EBA /* TabbarView.swift */; };
@@ -156,6 +159,11 @@
 		E64814D725F8A852000B13D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E64814D925F8A852000B13D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E64814DF25F8A852000B13D8 /* MyGithubExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyGithubExtension.entitlements; sourceTree = "<group>"; };
+		E64B0EF428885594005F5FB1 /* SafariViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariViewHelper.swift; sourceTree = "<group>"; };
+		E64B0EF62888590C005F5FB1 /* AsynImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsynImage.swift; sourceTree = "<group>"; };
+		E64B0EF8288859B0005F5FB1 /* DateFormatted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatted.swift; sourceTree = "<group>"; };
+		E64B0EFA28885ADC005F5FB1 /* SearchableList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchableList.swift; sourceTree = "<group>"; };
+		E64B0EFC28885C37005F5FB1 /* TimeLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLine.swift; sourceTree = "<group>"; };
 		E653AB52258A07EB003674C8 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		E67C98852592E281005D1EBA /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
 		E68A272C2885B18800952CA4 /* LoadingAnimView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingAnimView.swift; sourceTree = "<group>"; };
@@ -182,7 +190,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E64814B725F8818B000B13D8 /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,7 +206,6 @@
 			files = (
 				E64814D225F8A84E000B13D8 /* SwiftUI.framework in Frameworks */,
 				E64814D025F8A84E000B13D8 /* WidgetKit.framework in Frameworks */,
-				E648154825F8B0D8000B13D8 /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +306,10 @@
 				E68A27332885B72200952CA4 /* TrackableScrollView.swift */,
 				E68A27352885B89900952CA4 /* TermAndPrivacy.swift */,
 				E68A27382885B9A100952CA4 /* ShareSheetView.swift */,
+				E64B0EF62888590C005F5FB1 /* AsynImage.swift */,
+				E64B0EF8288859B0005F5FB1 /* DateFormatted.swift */,
+				E64B0EFA28885ADC005F5FB1 /* SearchableList.swift */,
+				E64B0EFC28885C37005F5FB1 /* TimeLine.swift */,
 			);
 			path = DesignCode;
 			sourceTree = "<group>";
@@ -358,6 +368,7 @@
 				E6E845C225EF7C5200CA0FD8 /* Models */,
 				E6AE2AFC25C7A4F600CC1EF2 /* ViewModifier */,
 				E6D7079027A13A8E006D6520 /* ImageDocument.swift */,
+				E64B0EF428885594005F5FB1 /* SafariViewHelper.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -389,7 +400,6 @@
 			);
 			name = "MySwiftUI (iOS)";
 			packageProductDependencies = (
-				E64814B625F8818B000B13D8 /* SwiftSoup */,
 			);
 			productName = "MySwiftUI (iOS)";
 			productReference = E621C33A2589A5FE00878BA8 /* MySwiftUI.app */;
@@ -426,7 +436,6 @@
 			);
 			name = MyGithubExtension;
 			packageProductDependencies = (
-				E648154725F8B0D8000B13D8 /* SwiftSoup */,
 			);
 			productName = MyGithubExtension;
 			productReference = E64814CD25F8A84E000B13D8 /* MyGithubExtension.appex */;
@@ -462,7 +471,6 @@
 			);
 			mainGroup = E621C32D2589A5FA00878BA8;
 			packageReferences = (
-				E64814B525F8818B000B13D8 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
 			);
 			productRefGroup = E621C33B2589A5FE00878BA8 /* Products */;
 			projectDirPath = "";
@@ -507,6 +515,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E64B0EF9288859B0005F5FB1 /* DateFormatted.swift in Sources */,
 				E6E845D625EF985D00CA0FD8 /* GameScene.swift in Sources */,
 				E64814C625F885F8000B13D8 /* GithubParser.swift in Sources */,
 				E621C3482589A5FE00878BA8 /* ContentView.swift in Sources */,
@@ -529,12 +538,14 @@
 				E643576228806EC80024196A /* Rotation3D.swift in Sources */,
 				E643576F288070750024196A /* LazyGridLayoutView.swift in Sources */,
 				E6AE2AF825C79E0300CC1EF2 /* AnimationView.swift in Sources */,
+				E64B0EF528885594005F5FB1 /* SafariViewHelper.swift in Sources */,
 				E6E845C425EF821800CA0FD8 /* AVView.swift in Sources */,
 				E68A27392885B9A100952CA4 /* ShareSheetView.swift in Sources */,
 				E67C98862592E281005D1EBA /* TabbarView.swift in Sources */,
 				E643576628806EC80024196A /* BackgroundBlurView.swift in Sources */,
 				E6E845BD25EF7C1700CA0FD8 /* Global.swift in Sources */,
 				E643575328806EAD0024196A /* DesignCodeView.swift in Sources */,
+				E64B0EFB28885ADC005F5FB1 /* SearchableList.swift in Sources */,
 				E635274A25F0888E0061721D /* PageTabView.swift in Sources */,
 				E6E845CD25EF89FA00CA0FD8 /* GridView.swift in Sources */,
 				E643576728806EC80024196A /* Text.swift in Sources */,
@@ -554,7 +565,9 @@
 				E68A27342885B72200952CA4 /* TrackableScrollView.swift in Sources */,
 				E63F7BEB25DFB50A004E78A0 /* Neumorphism.swift in Sources */,
 				E643576528806EC80024196A /* LongPressGesture.swift in Sources */,
+				E64B0EF72888590C005F5FB1 /* AsynImage.swift in Sources */,
 				E643576828806EC80024196A /* Mask.swift in Sources */,
+				E64B0EFD28885C37005F5FB1 /* TimeLine.swift in Sources */,
 				E643576C28806EC80024196A /* Shadow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -915,30 +928,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		E64814B525F8818B000B13D8 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/scinfu/SwiftSoup.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.3.2;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		E64814B625F8818B000B13D8 /* SwiftSoup */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = E64814B525F8818B000B13D8 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
-			productName = SwiftSoup;
-		};
-		E648154725F8B0D8000B13D8 /* SwiftSoup */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = E64814B525F8818B000B13D8 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
-			productName = SwiftSoup;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E621C32E2589A5FA00878BA8 /* Project object */;
 }

@@ -11,6 +11,8 @@ struct TermAndPrivacyView: View {
     
     @EnvironmentObject var global: Global
     
+    @State var showSafari = false
+    
     var body: some View {
         HStack(spacing: 0) {
             Text("You agree to our ")
@@ -18,7 +20,7 @@ struct TermAndPrivacyView: View {
             Text("Terms")
                 .foregroundColor(global.primaryColor)
                 .onTapGesture {
-                    UIApplication.shared.open(URL(string: "https://github.com/anhlh1706")!)
+                    showSafari = true
                 }
             
             Text(" and ")
@@ -30,6 +32,8 @@ struct TermAndPrivacyView: View {
                 }
             
             Text(".")
-        }
+        }.fullScreenCover(isPresented: $showSafari, content: {
+            SFSafariViewWrapper(url: URL(string: "https://github.com/anhlh1706")!)
+        })
     }
 }

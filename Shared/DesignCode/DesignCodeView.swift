@@ -29,6 +29,13 @@ struct DesignCodeView: View {
                 NavigationLink("LazyStackView", destination: LazyStackView())
                 
                 NavigationLink("Gradient preview", destination: GradientPreviewView())
+                
+                NavigationLink("AsynImageView", destination: AsynImageView())
+            }
+            
+            Section {
+                NavigationLink("DateFormatted", destination: DateFormatted())
+                
             }
             
             // MARK: User Interactive only
@@ -46,6 +53,11 @@ struct DesignCodeView: View {
                 NavigationLink("ModalView", destination: ModalView())
                 
                 NavigationLink("CustomModalView", destination: CustomModalView())
+                
+                NavigationLink("SearchableListView", destination: SearchableListView())
+                
+                NavigationLink("TimeLine", destination: TimeLine())
+                
             }
             
             // MARK: With animation

@@ -15,9 +15,8 @@ struct LongPressGestureView: View {
         Image(systemName: "camera.fill")
             .foregroundColor(.white)
             .frame(width: 60, height: 60)
-            .background(show ? Color.black : Color.blue)
             .mask(Circle())
-            .scaleEffect(press ? 2 : 1)
+            .scaleEffect(show ? 4 : 1)
             .animation(.spring(response: 0.4, dampingFraction: 0.6), value: show)
             .gesture(
                 LongPressGesture(minimumDuration: 0.5)
