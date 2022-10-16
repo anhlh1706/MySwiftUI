@@ -199,6 +199,18 @@ struct ContentView: View {
                     .foregroundColor(global.primaryColor)
                 }
                 
+                if #available(iOS 16, *) {
+                    Section {
+                        Button("Bottom sheet") {
+                            presentingModal.toggle()
+                        }
+                        .sheet(isPresented: $presentingModal) {
+                            Text("Bottom shit")
+                                .presentationDetents([.large, .medium, .height(200)])
+                        }
+                    }
+                }
+                
                 Section {
                     Button("Export file") {
                         showingExporter.toggle()
