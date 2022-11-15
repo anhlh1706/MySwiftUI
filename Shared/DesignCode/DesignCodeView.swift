@@ -10,10 +10,12 @@ import SwiftUI
 struct DesignCodeView: View {
     var body: some View {
         Form {
+            Section {
+                NavigationLink("AppIcon", destination: AppIconView())
+            }
+            
             // MARK: View only
             Section {
-                NavigationLink("SideBar", destination: SideBarView())
-                
                 NavigationLink("Text", destination: ContentViewText())
                 
                 NavigationLink("ShadowView", destination: ShadowView())
@@ -31,11 +33,6 @@ struct DesignCodeView: View {
                 NavigationLink("Gradient preview", destination: GradientPreviewView())
                 
                 NavigationLink("AsynImageView", destination: AsynImageView())
-            }
-            
-            Section {
-                NavigationLink("DateFormatted", destination: DateFormatted())
-                
             }
             
             // MARK: User Interactive only
@@ -62,6 +59,10 @@ struct DesignCodeView: View {
             
             // MARK: With animation
             Section {
+                NavigationLink("Spirograph", destination: SpirographView())
+                
+                NavigationLink("Neumorphism", destination: NeumorphismExampleView())
+                
                 NavigationLink("TransitionView", destination: TransitionView())
                 
                 NavigationLink("AnimationView", destination: DesignCodeAnimationView())

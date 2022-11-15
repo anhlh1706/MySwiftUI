@@ -94,12 +94,8 @@ struct ContentView: View {
                 }
                 
                 Section {
-                    // MARK: - Spirograph
-                    NavigationLink("Spirograph", destination: SpirographView())
-                    
-                    
-                    // MARK: - Neumorphism
-                    NavigationLink("Neumorphism", destination: NeumorphismExampleView())
+                    // MARK: - DateFormatted
+                    NavigationLink("DateFormatted", destination: DateFormatted())
                     
                     
                     // MARK: - MapKit

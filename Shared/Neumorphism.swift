@@ -60,7 +60,7 @@ struct DarkButtonStyle: ButtonStyle {
             .background(
                 DarkBackground(isHighlighted: configuration.isPressed, shape: Circle())
             )
-            .animation(nil)
+            .animation(nil, value: 1)
     }
 }
 
@@ -72,7 +72,7 @@ struct ColorfulButtonStyle: ButtonStyle {
             .background(
                 ColorfulBackground(isHighlighted: configuration.isPressed, shape: Circle())
             )
-            .animation(nil)
+            .animation(nil, value: 1)
     }
 }
 

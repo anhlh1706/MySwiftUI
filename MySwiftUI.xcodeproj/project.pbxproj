@@ -23,7 +23,6 @@
 		E643576128806EC80024196A /* DragGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = E643575428806EC70024196A /* DragGesture.swift */; };
 		E643576228806EC80024196A /* Rotation3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = E643575528806EC70024196A /* Rotation3D.swift */; };
 		E643576328806EC80024196A /* AdvancedMatchedGeometryEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = E643575628806EC70024196A /* AdvancedMatchedGeometryEffect.swift */; };
-		E643576428806EC80024196A /* SideBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E643575728806EC70024196A /* SideBar.swift */; };
 		E643576528806EC80024196A /* LongPressGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = E643575828806EC70024196A /* LongPressGesture.swift */; };
 		E643576628806EC80024196A /* BackgroundBlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E643575928806EC70024196A /* BackgroundBlurView.swift */; };
 		E643576728806EC80024196A /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = E643575A28806EC70024196A /* Text.swift */; };
@@ -78,6 +77,7 @@
 		E6AE2AF925C79E0300CC1EF2 /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AE2AF725C79E0300CC1EF2 /* AnimationView.swift */; };
 		E6AE2AFE25C7A50600CC1EF2 /* PrimaryButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AE2AFD25C7A50600CC1EF2 /* PrimaryButtonModifier.swift */; };
 		E6AE2AFF25C7A50600CC1EF2 /* PrimaryButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AE2AFD25C7A50600CC1EF2 /* PrimaryButtonModifier.swift */; };
+		E6CFF2372923E22000DEDD62 /* AppIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6CFF2362923E22000DEDD62 /* AppIcon.swift */; };
 		E6D7079127A13A8E006D6520 /* ImageDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D7079027A13A8E006D6520 /* ImageDocument.swift */; };
 		E6E845B425EF6DA100CA0FD8 /* MapKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E845B325EF6DA100CA0FD8 /* MapKitView.swift */; };
 		E6E845B525EF6DA100CA0FD8 /* MapKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E845B325EF6DA100CA0FD8 /* MapKitView.swift */; };
@@ -131,7 +131,6 @@
 		E643575428806EC70024196A /* DragGesture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragGesture.swift; sourceTree = "<group>"; };
 		E643575528806EC70024196A /* Rotation3D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rotation3D.swift; sourceTree = "<group>"; };
 		E643575628806EC70024196A /* AdvancedMatchedGeometryEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvancedMatchedGeometryEffect.swift; sourceTree = "<group>"; };
-		E643575728806EC70024196A /* SideBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideBar.swift; sourceTree = "<group>"; };
 		E643575828806EC70024196A /* LongPressGesture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LongPressGesture.swift; sourceTree = "<group>"; };
 		E643575928806EC70024196A /* BackgroundBlurView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundBlurView.swift; sourceTree = "<group>"; };
 		E643575A28806EC70024196A /* Text.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
@@ -177,6 +176,7 @@
 		E6913B5925C804FF00042134 /* DrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
 		E6AE2AF725C79E0300CC1EF2 /* AnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationView.swift; sourceTree = "<group>"; };
 		E6AE2AFD25C7A50600CC1EF2 /* PrimaryButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonModifier.swift; sourceTree = "<group>"; };
+		E6CFF2362923E22000DEDD62 /* AppIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIcon.swift; sourceTree = "<group>"; };
 		E6D7079027A13A8E006D6520 /* ImageDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDocument.swift; sourceTree = "<group>"; };
 		E6E845B325EF6DA100CA0FD8 /* MapKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitView.swift; sourceTree = "<group>"; };
 		E6E845BC25EF7C1700CA0FD8 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
@@ -290,7 +290,6 @@
 				E643575C28806EC70024196A /* MatchedGeometryEffect.swift */,
 				E643575528806EC70024196A /* Rotation3D.swift */,
 				E643575F28806EC70024196A /* Shadow.swift */,
-				E643575728806EC70024196A /* SideBar.swift */,
 				E643576028806EC80024196A /* TabView.swift */,
 				E643575A28806EC70024196A /* Text.swift */,
 				E643575E28806EC70024196A /* Transition.swift */,
@@ -310,6 +309,7 @@
 				E64B0EF8288859B0005F5FB1 /* DateFormatted.swift */,
 				E64B0EFA28885ADC005F5FB1 /* SearchableList.swift */,
 				E64B0EFC28885C37005F5FB1 /* TimeLine.swift */,
+				E6CFF2362923E22000DEDD62 /* AppIcon.swift */,
 			);
 			path = DesignCode;
 			sourceTree = "<group>";
@@ -525,6 +525,7 @@
 				E643576928806EC80024196A /* MatchedGeometryEffect.swift in Sources */,
 				E643577B288079B20024196A /* RedactedPlaceholder.swift in Sources */,
 				E68A273B2885BA8A00952CA4 /* UIApplication.swift in Sources */,
+				E6CFF2372923E22000DEDD62 /* AppIcon.swift in Sources */,
 				E622793D25B17DE000AC5E7B /* PresentedView.swift in Sources */,
 				E68A27362885B89900952CA4 /* TermAndPrivacy.swift in Sources */,
 				E6435777288074950024196A /* BindingView.swift in Sources */,
@@ -552,7 +553,6 @@
 				E643577D28807B3E0024196A /* CardScrollView.swift in Sources */,
 				E64357712880711E0024196A /* LazyStackView.swift in Sources */,
 				E64814C225F881F3000B13D8 /* ContributionsGraphView.swift in Sources */,
-				E643576428806EC80024196A /* SideBar.swift in Sources */,
 				E68A27322885B5D500952CA4 /* View.swift in Sources */,
 				E68A272D2885B18800952CA4 /* LoadingAnimView.swift in Sources */,
 				E643576D28806EC80024196A /* TabView.swift in Sources */,
